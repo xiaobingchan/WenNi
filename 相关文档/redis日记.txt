@@ -1,0 +1,12 @@
+Windows安装方法：
+
+CentOS安装方法：
+
+启动方法：E:\MyWeb\redis-windows-master\src\msopentech\redis-64.2.8.2101\redis-server.exe E:\MyWeb\redis-windows-master\src\msopentech\redis-64.2.8.2101\redis.windows.conf
+E:\MyWeb\redis-windows-master\src\msopentech\redis-64.2.8.2101\redis-cli
+
+*********  1，输入授权密码   ****************
+auth 密码
+
+方法2：E:\MyWeb\redis-windows-master\src\msopentech\redis-64.2.8.2101\redis-cli -h ip地址 -p 端口号 -a 密码
+

@@ -1,0 +1,7 @@
+Windows安装方法：
+
+CentOS安装方法：
+
+Windows 启动方法：
+
+CentOS7 启动方法：

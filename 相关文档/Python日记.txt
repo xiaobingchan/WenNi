@@ -1,0 +1,4 @@
+Windows安装方法：
+
+CentOS安装方法：
+

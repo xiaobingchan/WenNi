@@ -1,0 +1,13 @@
+Windows安装方法：
+
+CentOS安装方法：
+
+Windows 启动方法1：
+E:\MongoDB\Server\4.0\bin\mongod --dbpath E:\MongoDB\Server\4.0\data\db
+E:\MongoDB\Server\4.0\bin\mongo.exe
+Windows 启动方法2（start、restart、stop）：net stop "MongoDB"
+
+CentOS  启动方法：
+./mongod --dbpath db
+./mongo
+

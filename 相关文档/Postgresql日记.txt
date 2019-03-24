@@ -1,0 +1,19 @@
+Windows安装方法：
+
+CentOS安装方法：
+
+Windows 启动方法（start、restart、stop）：net start "postgresql-x64-10"
+CentOS7 启动方法（start、restart、stop）：service postgresql-9.5 start
+
+psql -p 5433 -U postgres -d postgres
+
+https://www.yiibai.com/postgresql/postgresql-create-database.html
+
+1，查看数据库：\l
+2，创建数据库：create database testdb;
+3，删除数据库：drop database testdb;
+4，创建数据表：CREATE TABLE public.student2(id integer NOT NULL,name character(100),
+subjects character(1),CONSTRAINT student2_pkey PRIMARY KEY (id))WITH (OIDS=FALSE);
+ALTER TABLE public.student2 OWNER TO postgres;
+COMMENT ON TABLE public.student2  IS '这是';
+5，

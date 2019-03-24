@@ -1,9 +1,11 @@
 # # learn-and-learn，只能是单纯的学习呀
 
 ------
-###  算法：
+### 算法：
 
 力扣中国：https://leetcode-cn.com
+
+Python力扣答案集合：https://github.com/936968629/leetcode
 
 ------
 
@@ -29,7 +31,7 @@
 
 ### 测试领域（Jmeter、Appium、Selenium）：
 
-JMetre安装：https://www.cnblogs.com/fanbi/p/9413237.html
+JMetre安装(Windows界面)：https://www.cnblogs.com/fanbi/p/9413237.html
 
 JMetre教程：https://blog.csdn.net/yaorongke/article/details/82799609
 
@@ -37,9 +39,11 @@ Selenium安装：https://www.cnblogs.com/imyalost/p/7242524.html
 
 Selenium各个浏览器驱动下载：https://www.cnblogs.com/nancyzhu/p/8589764.html
 
-Selenium史上最全教程：https://www.yiibai.com/selenium/
+Selenium史上最全教程（Java）：https://www.yiibai.com/selenium/
 
-Appium史上最全教程：https://www.cnblogs.com/shuchengxiang/p/7145037.html
+Selenium-python中文文档：https://selenium-python-zh.readthedocs.io/en/latest/
+
+Appium史上最全教程（Python）：https://www.cnblogs.com/shuchengxiang/p/7145037.html
 
 ------
 

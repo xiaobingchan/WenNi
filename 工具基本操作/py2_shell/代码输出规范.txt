@@ -1,0 +1,32 @@
+python文件名命名规范：文件名应与脚本功能相应，文件名称要包含脚本对象类型，脚本对象，脚本功能，脚本版本号和文件扩展名。如数据库 mysql 的巡检脚本：db_mysql_xunjian_001.py
+
+shell文件命名规范：文件名应与脚本功能相应，文件名称要包含脚本对象类型，脚本对象，脚本功能，脚本版本号和文件扩展名。如 linux 系统的巡检脚本：os_linux_xunjian_001.sh
+
+bat文件命名规范：文件名应与脚本功能相应，文件名称要包含脚本对象类型，脚本对象，脚本功能，脚本版本号和文件扩展名。如 window 系统的巡检脚本：os_window_xunjian_001.bat
+
+python程序头部命名规范：
+#!/usr/bin/env python
+# coding: utf-8
+# @Time : 2018-4-8
+# @Author : Tanxiaoshu
+# @Company : NanWangZongBu
+# @File : os_all_info_001.py
+# @Library : install psutil,
+# @Parameter:{'cpu_percent':"50",'mem_percent':"50",'swap_mem_percent':"50",'disk_percent':"50"}
+
+shell程序头部命名规范：
+#!/bin/sh
+#date:2018-04-09 15:35:11
+#author:chengengcong
+#company:NanWangZongBu
+#version:1.0.1
+#file: os_linux_check_001.sh
+#Description: the linuc check...
+
+bat程序头部命名规范：
+::date:2018-04-09 15:35:11
+::author:chengengcong
+::company:NanWangZongBu
+::version:1.0.1
+::file: os_window_wmic_001.bat
+::Parameter:{'cpu_percent':"50",'mem_percent':"50",'swap_mem_percent':"50",'disk_percent':"50"}

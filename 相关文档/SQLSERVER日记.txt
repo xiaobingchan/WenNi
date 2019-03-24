@@ -1,0 +1,39 @@
+
+SQL Server(1433)( pip install pymssql)
+SQL Server2008下载地址：http://www.downza.cn/soft/182269.html
+安装方法：https://jingyan.baidu.com/article/948f592434b407d80ef5f97d.html
+安装无法重启：http://www.51testing.com/html/21/318121-229360.html
+SQL Server管理工具下载：https://www.cnblogs.com/yzl050819/p/8284242.html
+无法SQL登陆：https://blog.csdn.net/github_35160620/article/details/52676416
+
+DOS命令：osql -S (local)\SQLEXPRESS -U sa -P a12345678 /q "create login dba with password='abcd1234@', default_database=master;"
+sqlcmd -S"(local)\SQLEXPRESSLYJ" -U"sa" -P"a12345678" -d"master" -Q"select * from test.dbo.student;" -o sql.txt
+
+create login dba with password='abcd1234@', default_database=master;
+
+
+
+import pymssql
+
+conn = pymssql.connect(host='JCVECB54U9LXMZQ\SQLEXPRESSLYJ',
+                       user='sa',
+                       password='a12345678',
+                       database='test',
+                       charset='utf8')
+
+#查看连接是否成功
+cursor = conn.cursor()
+try:
+   sql = "insert into student values(1, '张三')"
+   cursor.execute(sql)
+   conn.commit()
+except Exception as ex:
+   conn.rollback()
+   raise ex
+finally:
+sql = "select * from student"
+cursor.execute(sql)
+#用一个rs变量获取数据
+rs = cursor.fetchall()
+
+print(rs)
