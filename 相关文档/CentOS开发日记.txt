@@ -205,7 +205,7 @@ Redis（6374）
 daemonize yes
 哈希SET操作：HSET myhash field1 "foo"
  
-
+Memcache安装方法：yum install memcached
 Memcached（11211）
 开启：/usr/bin/memcached  -b -l 127.0.0.1 -p 11211 -m 150 -u root
  

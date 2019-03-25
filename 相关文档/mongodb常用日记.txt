@@ -1,13 +1,42 @@
-Windows安装方法：
+Windows安装方法：官网下载，傻瓜式安装
 
-CentOS安装方法：
+CentOS安装方法：https://blog.csdn.net/junshangshui/article/details/79371316
 
 Windows 启动方法1：
 E:\MongoDB\Server\4.0\bin\mongod --dbpath E:\MongoDB\Server\4.0\data\db
 E:\MongoDB\Server\4.0\bin\mongo.exe
-Windows 启动方法2（start、restart、stop）：net stop "MongoDB"
+
+Windows 启动方法2（start、restart、stop）：net start "MongoDB"
 
 CentOS  启动方法：
 ./mongod --dbpath db
 ./mongo
 
+*******************  1，列出当前所属数据库  *******
+db
+
+*******************  2，创建数据库  **************
+use testdb
+
+*******************  3，列出所有数据库  **********
+show dbs
+
+*******************  4，删除当前数据   ************
+db.dropDatabase()
+
+******************** 5，创建集合   **************
+db.createCollection("mycollection")
+
+******************   6，列出所有集合 ************
+show collections
+
+******************   7，创建指定大小集合 ***********
+db.createCollection("mycol", {capped : true, autoIndexId : true, size : 6142800, max : 10000 })
+
+*****************  8，插入数据到指定集合  ************
+db.newcollection.insert({"name" : "yiibaitutorials"})
+
+****************  9，删除集合   *******************
+db.mycollection.drop()
+
+***************  10，

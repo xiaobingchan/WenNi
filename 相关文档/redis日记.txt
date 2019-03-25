@@ -10,3 +10,7 @@ auth 密码
 
 方法2：E:\MyWeb\redis-windows-master\src\msopentech\redis-64.2.8.2101\redis-cli -h ip地址 -p 端口号 -a 密码
 
+*********  2，列出Redis内部使用信息   ****************
+
+E:\MyWeb\redis-windows-master\src\msopentech\redis-64.2.8.2101\redis-cli -h 127.0.0.1 -a  123456 info
+

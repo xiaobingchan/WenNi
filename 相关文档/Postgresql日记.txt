@@ -7,6 +7,7 @@ CentOS7 启动方法（start、restart、stop）：service postgresql-9.5 start
 
 psql -p 5433 -U postgres -d postgres
 
+学习教程
 https://www.yiibai.com/postgresql/postgresql-create-database.html
 
 1，查看数据库：\l

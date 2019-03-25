@@ -1,3 +1,13 @@
 Windows 启动方法：E:\MyWeb\memcached-1.4.5-amd64\memcached-amd64\memcached.exe
 
-CentOS  启动方法：
+Memcache安装方法：yum install memcached
+Memcached（11211）
+CentOS开启：/usr/bin/memcached  -b -l 127.0.0.1 -p 11211 -m 150 -u root
+
+
+shell运维巡检命令：printf "stats\r\n" | nc 127.0.0.1 11211
+
+Linux进去memcached命令行：telnet 127.0.0.1 11211
+
+列出参数命令：stats
+
