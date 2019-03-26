@@ -47,6 +47,17 @@ Appium史上最全教程（Python）：https://www.cnblogs.com/shuchengxiang/p/7
 
 ------
 
+### Python
+
+Python面试题目集合：https://github.com/taizilongxu/interview_python
+
+2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记
+https://github.com/imhuay/Algorithm_Interview_Notes-Chinese
+
+23种Python设计模式：https://www.cnblogs.com/Liqiongyu/p/5916710.html
+
+------
+
 ### Java面试笔试基础宝典集合：
 
 <i class="icon-share"></i> https://github.com/guanzhenxing/java_interview_manual
