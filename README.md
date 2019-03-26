@@ -5,7 +5,7 @@
 
 力扣中国：https://leetcode-cn.com
 
-Python力扣答案集合：https://github.com/936968629/leetcode
+Python力扣答案集合：https://github.com/pezy/LeetCode
 
 ------
 
@@ -82,4 +82,13 @@ https://github.com/imhuay/Algorithm_Interview_Notes-Chinese
 https://github.com/Avik-Jain/100-Days-of-ML-Code-Chinese-Version
 
 ------
+### 莫凡TensorFlow：
 
+1，莫凡TensorFlow：https://morvanzhou.github.io/
+2，莫凡TensorFlow代码：https://blog.csdn.net/jiaoyangwm/article/details/79715826
+3，简易TensorFlow代码：https://github.com/MorvanZhou/Tensorflow-Tutorial
+
+-------
+
+### 机器学习实战：
+https://blog.csdn.net/c406495762/article/details/75172850
