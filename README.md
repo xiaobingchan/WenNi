@@ -92,3 +92,55 @@ https://github.com/Avik-Jain/100-Days-of-ML-Code-Chinese-Version
 
 ### 机器学习实战：
 https://blog.csdn.net/c406495762/article/details/75172850
+
+
+_______
+
+### 广州招聘信息：
+
+腾讯广州招聘：https://hr.tencent.com/index.php（校招：https://join.qq.com/）
+
+字节跳动招聘（含校招）：https://job.bytedance.com/society
+
+视源股份招聘：http://hr.cvte.com/（校招：http://campus.cvte.com/）
+
+网易招聘：https://hr.163.com/（校招：https://campus.163.com/）
+
+三七互娱（含校招）：http://zhaopin.37.com/index.php
+
+虎牙直播（含校招）：http://hr.huya.com/
+
+欢聚时代（含校招）：http://hr.yy.com/
+
+酷狗（含校招）：http://www.kugou.com/hr/html/index.html
+
+中移互联网（含校招）：http://www.cmichr.com/
+
+-------
+
+### 深圳招聘信息：
+
+腾讯：https://hr.tencent.com/index.php（校招：https://join.qq.com/）
+
+华为（含校招）：http://career.huawei.com/
+
+大疆（含校招）：https://we.dji.com/zh-CN/
+
+顺丰（含校招）：https://hr.sf-express.com/index.jsp
+
+微众（含校招）：https://webank.cheng95.com/
+
+迅雷（含校招）：http://hr.xunlei.com/
+
+oppo（含校招）：https://sc.hotjob.cn/wt/OPPO/web/index?brandCode=1
+
+魅族（含校招）：http://hr.meizu.com/
+
+小米（含校招）：http://hr.xiaomi.com/
+
+vivo（含校招）：https://hr.vivo.com/
+
+一加（含校招）：https://career.oneplus.com/
+
+努比亚（含校招）：https://hr.nubia.com/
+
