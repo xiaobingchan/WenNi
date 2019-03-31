@@ -1,3 +1,5 @@
+学习Redis：http://www.runoob.com/redis/redis-tutorial.html
+
 Windows安装方法：
 
 CentOS安装方法：
@@ -13,4 +15,42 @@ auth 密码
 *********  2，列出Redis内部使用信息   ****************
 
 E:\MyWeb\redis-windows-master\src\msopentech\redis-64.2.8.2101\redis-cli -h 127.0.0.1 -a  123456 info
+
+*********  3，字符串操作     *****************
+set name ben
+get name
+del name
+
+*********  4，hash set操作   *******************
+hmset name me "lyj" sex "man"
+hgetall name
+hget name sex
+hdel name sex
+
+*********  5，列表操作    ******************
+lpush name lyj
+lrange name 0 10
+
+*********  6，集合操作   ********************
+sadd name2 lyj
+sadd name2 lyj2
+sadd name3 lyj
+差集：SDIFF name2 name3
+交集：SINTER name2 name3
+
+**********   7，消息订阅   *******************
+SUBSCRIBE redisChat
+PUBLISH redisChat "Learn redis by runoob.com"
+
+**********   8，连续事务   *******************
+MULTI
+.....
+EXEC
+
+***********  9，备份与恢复   *****************
+SAVE(BGSAVE)
+CONFIG GET dir
+获取密码：CONFIG get requirepass
+性能测试：E:\MyWeb\redis-windows-master\src\msopentech\redis-64.2.8.2101\redis-benchmark -n 10000  -q
+
 

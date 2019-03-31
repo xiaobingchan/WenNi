@@ -8,9 +8,9 @@ testinfo.chlid = 4
 testinfo.testid = 250
 testinfo.stepdata = b'abd'
 
-print(testinfo, testinfo.devtype)  
+#print(testinfo, testinfo.devtype)
 out = testinfo.SerializeToString()  
-print(out)  
+print(out)
   
   
 decode = test2_pb2.testinfo()  

@@ -1,1 +1,7 @@
 Spark学习平台：
+
+ELT数据抽取，转换，清洗工具Kettle：https://www.cnblogs.com/zhangchenliang/p/4179775.html
+
+Ebay开源数据BI可视化web框架Pulsar Reporting：https://github.com/pulsarIO
+
+Apache Pulsar安装(只支持Linux)：

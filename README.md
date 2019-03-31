@@ -116,6 +116,8 @@ _______
 
 中移互联网（含校招）：http://www.cmichr.com/
 
+阿里（含校招）：https://job.alibaba.com/zhaopin/index.htm
+
 -------
 
 ### 深圳招聘信息：
@@ -144,3 +146,8 @@ vivo（含校招）：https://hr.vivo.com/
 
 努比亚（含校招）：https://hr.nubia.com/
 
+--------
+
+### 名企面经大全
+
+https://www.nowcoder.com/school/schedule

@@ -108,3 +108,9 @@ if [ -f "/data/filename" ] || [ -d "/data/filename/" ]
 *******************   11，创建用户密码，自动确认命令
 echo "${password}" | passwd ${username} --stdin> /dev/null 2>&1
 
+*******************   12，yum下载本地依赖包
+yum install --downloadonly --downloaddir=/root/mypackages/  openssl make cmake gcc gcc-c++ gcc-g77
+
+*******************   13，centos版本获取
+rpm -q centos-release|cut -d- -f3
+

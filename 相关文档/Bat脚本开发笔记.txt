@@ -205,3 +205,15 @@ if %a% gtr 5 if %a% lss 10 (echo ok) else echo no
 **********  20，Windows查看文件是否存在：if not exist 1.txt echo nofile
 
 **********  21, 执行软链接：start "" "C:\ioszdhyw\bin\wlst.lnk"
+
+**********  22，新建文件夹：md 文件夹名
+
+**********  23，Windows查看文件夹是否存在：
+@echo off
+if not exist C:\Users\Administrator\Desktop\shit\ (
+set _result_0ce9=0
+) else ( set _result_0ce9=1 )
+
+**********  24，解压zip包
+unzip f:\wenjian.zip
+
