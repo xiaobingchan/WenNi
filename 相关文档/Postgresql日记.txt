@@ -10,6 +10,9 @@ psql -p 5433 -U postgres -d postgres
 学习教程
 https://www.yiibai.com/postgresql/postgresql-create-database.html
 
+列出系统：show all;
+
+
 1，查看数据库：\l
 2，创建数据库：create database testdb;
 3，删除数据库：drop database testdb;

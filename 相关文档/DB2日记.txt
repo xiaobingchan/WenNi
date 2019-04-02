@@ -1,0 +1,18 @@
+DB2(50000)(pip install ibm_db)
+
+命令行：
+db2cmd db2
+CONNECT TO TEST USER db2admin USING a12345678
+
+启动服务：
+net start "DB2DAS00"
+net start "DB2REMOTECMD_DB2COPY1"
+net start "DB2MGMTSVC_DB2COPY1"
+net start "DB2-0"
+
+import ibm_db
+conn = ibm_db.connect("DATABASE=test;HOSTNAME=localhost;PORT=50000;PROTOCOL=TCPIP;UID=db2admin;PWD=a12345678;", "", "")
+if conn:
+    print('已链接DB2');
+
+

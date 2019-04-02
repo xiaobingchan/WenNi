@@ -54,16 +54,21 @@ db.lyjcollection1.save({
     "description" : "MongoDB 是一个 Nosql 数据库",
     "xbb":"xbb"
 })
-
+******************  12，更新指定id数据  *****************
 db.lyjcollection1.find().pretty()
 
+******************  12，更新指定id数据  *****************
 db.lyjcollection1.remove({"_id" : ObjectId("5ca0c0fbb81580496b501208")})
 
+******************  12，更新指定id数据  *****************
 db.lyjcollection1.find({"_id" : ObjectId("5ca0c12db81580496b501209")})
 
+******************  12，更新指定id数据  *****************
 db.lyjcollection1.find({$or:[{"name":"yiibaitutorials5"},{"name": "yiibaitutorials6"}]})
 
+******************  12，更新指定id数据  *****************
 db.lyjcollection1.find({"description":"MongoDB 是一个 Nosql 数据 库2",$or:[{"name":"yiibaitutorials5"},{"name": "yiibaitutorials6"}]})
 
+******************  12，大于条件  *****************
 b.lyjcollection1.find({likes:{$gt:100}})
 
