@@ -1,0 +1,11 @@
+#!c:\python27\python2.exe
+from django.core import management # pip install django
+
+if __name__ == "__main__":
+    management.execute_from_command_line()
+
+*****************   Django创建命令：
+python django-admin.py startproject myDjango（django-admin.py startproject myDjango）
+cd myDjango
+python manage.py startapp learn
+python manage.py runserver 127.0.0.1:8000

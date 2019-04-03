@@ -109,8 +109,27 @@ if [ -f "/data/filename" ] || [ -d "/data/filename/" ]
 echo "${password}" | passwd ${username} --stdin> /dev/null 2>&1
 
 *******************   12，yum下载本地依赖包
-yum install --downloadonly --downloaddir=/root/mypackages/  openssl make cmake gcc gcc-c++ gcc-g77
+yum install --downloadonly --downloaddir=/root/python_yum/  python
+rpm卸载：rpm -e --nodeps
+rpm查询：rpm -qa
+rpm安装: rpm -ivh
 
 *******************   13，centos版本获取
 rpm -q centos-release|cut -d- -f3
 
+*******************   14，读取txt文件
+ls *.rpm>list.txt
+for  line  in  `cat list.txt`
+do
+rpm -ivh ${line}
+done
+
+*******************   15，批量杀进程
+ps -aux | grep ping6 | cut -c 9-15 | xargs kill -9
+
+*******************   四剑客：awk一行取不同列；sed文本处理；cut截取字符串；xargs多行循环列出
+
+*******************   16，文件md5值
+md5sum test.py
+sha1sum test.py
+sha256sum test.py

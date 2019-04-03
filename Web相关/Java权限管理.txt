@@ -1,0 +1,5 @@
+权限管理基本设计：https://www.cnblogs.com/shijiaqi1066/p/3793894.html
+
+Shiro实现权限验证：https://blog.csdn.net/qq_39874546/article/details/79081950
+
+Spring Security实现权限验证：https://blog.csdn.net/cloume/article/details/83790111

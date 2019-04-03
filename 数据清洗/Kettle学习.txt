@@ -1,0 +1,8 @@
+ELT数据抽取，转换，清洗工具Kettle官方示例：https://www.cnblogs.com/zhangchenliang/p/4179775.html
+
+入门1：https://www.cnblogs.com/mq0036/p/9238646.html
+入门2：https://blog.csdn.net/qqfo24/article/details/82190535
+入门3：http://www.cnblogs.com/SunHuaJ/p/7593239.html
+https://ask.hellobi.com/blog/yuguiyang1990/category/1888
+
+MySQL(Postgresql)连接错误：https://blog.csdn.net/a15020059230/article/details/72823039

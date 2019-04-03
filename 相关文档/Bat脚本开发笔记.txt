@@ -217,3 +217,9 @@ set _result_0ce9=0
 **********  24，解压zip包
 unzip f:\wenjian.zip
 
+**********  25，Windows命令查看文件MD5
+certutil -hashfile yourfilename.ext MD5
+certutil -hashfile yourfilename.ext SHA1
+certutil -hashfile yourfilename.ext SHA256
+
+

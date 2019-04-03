@@ -1,4 +1,16 @@
-数据集
+机器学习数据集常用搜索网站
+
+1、Kaggle图像
+https://www.kaggle.com/competitions
+
+2、Google数据集搜索。
+https://toolbox.google.com/datasetsearch
+
+3、加州大学欧文分校机器学习图片库。
+http://archive.ics.uci.edu/ml/index.php
+
+4、Datahub，分享高质量数据集平台
+https://datahub.io/
 
 一、NBA球员数据集:
 
@@ -85,20 +97,3 @@ http://portals.broadinstitute.org/cgi-bin/cancer/datasets.cgi
 6、地球撞击陨石数据。
 https://www.analyticbridge.datasciencecentral.com/profiles/blogs/registered-meteorites-that-has-impacted-on-earth-visualized
 
-  机器学习数据集常用搜索网站
-
-1、Kaggle
-https://www.kaggle.com/competitions
-
-2、加州大学欧文分校机器学习库。
-http://archive.ics.uci.edu/ml/index.php
-
-
-3、Google数据集搜索。
-https://toolbox.google.com/datasetsearch
-
-4、Datahub，分享高质量数据集平台
-https://datahub.io/
-
-5、用于上传和查找数据集的机器学习数据集存储库。
-https://www.webdoctx.com/www.mldata.org

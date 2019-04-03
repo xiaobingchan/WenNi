@@ -2,6 +2,7 @@ Windows安装方法：
 
 CentOS安装方法：
 
-Windows 启动方法：
+Windows 启动方法：mysqld.exe --install MySql --defaults-file="e:/phpStudy/PHPTutorial/MySQL/my.ini"
+net stop mysql
 
 CentOS7 启动方法：
