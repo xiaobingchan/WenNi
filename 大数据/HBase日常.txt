@@ -1,0 +1,67 @@
+HBase
+Windows安装部署：https://blog.csdn.net/wm6752062/article/details/80381704
+
+启动HBase
+E:\MyWeb\hbase-1.2.6\bin\start-hbase.cmd
+E:\MyWeb\hbase-1.2.6\bin\hbase shell
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+***********************************************************************
+
+1、修改HBase下的   E:\MyWeb\hbase-1.2.6\conf\hbase-env.cmd
+
+set JAVA_HOME=C:\Java\jdk1.8.0_192
+set HBASE_MANAGES_ZK=true
+
+2、修改HBase下的   E:\MyWeb\hbase-1.2.6\conf\hbase-site.xml
+
+<configuration>
+<property>
+		<name>hbase.rootdir</name>
+		<value>file:///E:/MyWeb/hbase-1.2.6/tmp/hbase/root</value>
+	</property>
+	<property>
+		<name>hbase.tmp.dir</name>
+		<value>E:/MyWeb/hbase-1.2.6/tmp/hbase/tmp</value>
+	</property>
+	<property>
+		<name>hbase.zookeeper.quorum</name>
+		<value>127.0.0.1</value>
+	</property>
+	<property>
+		<name>hbase.zookeeper.property.dataDir</name>
+		<value>E:/MyWeb/hbase-1.2.6/tmp/hbase/zoo</value>
+	</property>
+	<property>
+		<name>hbase.cluster.distributed</name>
+		<value>false</value>
+	</property>
+</configuration>
+
+3、配置用户变量HADOOP_HOME
+
+新建环境变量HADOOP_HOME，值为   E:\MyWeb\hadoop-2.7.5\hadoop-2.7.5
+path后添加：                  %HADOOP_HOME%\bin
+
+
+

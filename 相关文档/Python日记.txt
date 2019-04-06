@@ -1,4 +1,2 @@
-Windows安装方法：
-
-CentOS安装方法：
+中文文档：https://docs.python.org/zh-cn/3.7/
 

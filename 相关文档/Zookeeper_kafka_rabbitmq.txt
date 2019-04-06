@@ -4,6 +4,12 @@ CentOS安装部署：https://blog.csdn.net/yanyan42/article/details/81667335
 E:\MyWeb\zookeeper-3.4.13\bin\zkServer.cmd
 E:\MyWeb\zookeeper-3.4.13\bin\zkCli.cmd
 
+RabbitMQ(pip install pika)
+Windows安装部署：https://www.cnblogs.com/miketwais/p/RabbitMQ.html
+E:\RabbitMQ_Server\rabbitmq_server-3.3.4\sbin\rabbitmq-plugins.bat enable rabbitmq_management
+E:\RabbitMQ_Server\rabbitmq_server-3.3.4\sbin\rabbitmq-service.bat install
+net stop "RabbitMQ"
+
 Kafka(pip install kafka)安装（Windows）：https://blog.csdn.net/woshixiazaizhe/article/details/80610432
 启动Kafka的Zookeeper：E:\MyWeb\kafka_2.11-1.1.0\bin\windows\zookeeper-server-start.bat E:\MyWeb\kafka_2.11-1.1.0\config\zookeeper.properties
 开动Kafka的server：E:\MyWeb\kafka_2.11-1.1.0\bin\windows\kafka-server-start.bat E:\MyWeb\kafka_2.11-1.1.0\config\server.properties
@@ -11,9 +17,5 @@ Kafka(pip install kafka)安装（Windows）：https://blog.csdn.net/woshixiazaiz
 启动消费者一直监听：E:\MyWeb\kafka_2.11-1.1.0\bin\windows\kafka-console-consumer.bat --zookeeper localhost:2181 --topic demo --from-beginning
 启动该topics的生产者发送一条临时信息：E:\MyWeb\kafka_2.11-1.1.0\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic demo
 
-RabbitMQ(pip install pika)
-Windows安装部署：https://www.cnblogs.com/miketwais/p/RabbitMQ.html
-E:\RabbitMQ_Server\rabbitmq_server-3.3.4\sbin\rabbitmq-plugins.bat enable rabbitmq_management
-E:\RabbitMQ_Server\rabbitmq_server-3.3.4\sbin\rabbitmq-service.bat install
-net stop "RabbitMQ"
+
 

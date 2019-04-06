@@ -1,0 +1,21 @@
+《100天机器学习》：https://github.com/Avik-Jain/100-Days-of-ML-Code-Chinese-Version
+
+《机器学习实战》Github源码地址：https://github.com/wzy6642/Machine-Learning-in-Action-Python3
+《机器学习实战》算法解析：https://blog.csdn.net/c406495762/article/details/75172850
+
+
+常用机器学习算法解释：https://mp.weixin.qq.com/s/tmZXmMHCpgiA0_lVlPCVuA
+-----------------------------------------------------
+线性回归
+Logistic 回归
+LDA
+决策树
+朴素贝叶斯
+K 最近邻算法（KNN）
+向量量化算法（LVQ）
+支持向量机（SVM）
+随机森林
+Bagging
+Boosting
+AdaBoost
+
