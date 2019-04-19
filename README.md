@@ -56,6 +56,8 @@ https://github.com/imhuay/Algorithm_Interview_Notes-Chinese
 
 23种Python设计模式：https://www.cnblogs.com/Liqiongyu/p/5916710.html
 
+Python面试经典：https://github.com/imhuay/Algorithm_Interview_Notes-Chinese
+
 ------
 
 ### Java面试笔试基础宝典集合：

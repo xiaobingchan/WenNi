@@ -3,19 +3,24 @@
 《机器学习实战》Github源码地址：https://github.com/wzy6642/Machine-Learning-in-Action-Python3
 《机器学习实战》算法解析：https://blog.csdn.net/c406495762/article/details/75172850
 
+机器学习向王者学习：https://blog.csdn.net/jiaoyangwm/article/list/7?
 
-常用机器学习算法解释：https://mp.weixin.qq.com/s/tmZXmMHCpgiA0_lVlPCVuA
+莫凡：https://morvanzhou.github.io/
+2，莫凡TensorFlow代码：https://blog.csdn.net/jiaoyangwm/article/details/79715826
+3，简易TensorFlow代码：https://github.com/MorvanZhou/Tensorflow-Tutorial
+4，简易PyTorch代码：https://github.com/MorvanZhou/PyTorch-Tutorial
+
+常用机器学习算法解释
 -----------------------------------------------------
-线性回归
-Logistic 回归
-LDA
-决策树
-朴素贝叶斯
-K 最近邻算法（KNN）
-向量量化算法（LVQ）
-支持向量机（SVM）
-随机森林
-Bagging
-Boosting
-AdaBoost
+线性回归、Logistic 回归、LDA
+决策树、朴素贝叶斯、K最近邻算法（KNN）
+向量量化算法（LVQ）、支持向量机（SVM）
+随机森林、Bagging
+Boosting、AdaBoost
+
+机器学习必懂的25个名词：https://mp.weixin.qq.com/s/uwGcrcnHlrsI5dycSJKRdw
+--------------------------------------------------------
+
+2019年度49个顶级机器学习开源项目：https://mp.weixin.qq.com/s/gOUVoQvF5ar2NPMKPhK9vg
+PyTorch模型训练实用教程：https://mp.weixin.qq.com/s/v1VgVAc3SHEgKxOJKApOnQ
 

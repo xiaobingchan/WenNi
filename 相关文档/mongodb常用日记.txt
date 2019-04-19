@@ -14,6 +14,8 @@ CentOS  启动方法：
 ./mongod --dbpath db
 ./mongo
 
+E:\MongoDB\Server\4.0\bin\mongoexport -h 127.0.0.1 --port 27017 -d newlyj -c lyjcollection1 -q "{'xbb':112}" --type=csv -f name,description -o mtb1.csv
+
 *******************  1，列出当前所属数据库  *******
 db
 
@@ -36,13 +38,17 @@ show collections
 db.createCollection("mycol", {capped : true, autoIndexId : true, size : 6142800, max : 10000 })
 
 *****************  8，插入数据到指定集合  ************
-db.lyjcollection1.insert({"name" : "yiibaitutorials6","description":"MongoDB 是一个 Nosql 数据 库9","likes":700})
+db.lyjcollection1.insert({
+"name" : "MongoDB22cc",
+"description":"MongoDB 是一个 Nosql 数据 库9",
+"xbb":700
+})
 
 ****************  9，删除集合   *******************
 db.lyjcollection1.drop()
 
 ***************  10，列出集合中所有数据   *************
-db.col.find()
+db.lyjcollection1.find()
 
 ******************  11，更新数据   ********************
 db.lyjcollection1.update({'name':'yiibaitutorials2'},{$set:{'name':'MongoDB'}})
@@ -52,7 +58,7 @@ db.lyjcollection1.save({
     "_id" : ObjectId("5ca0c12db81580496b501209"),
     "name" : "MongoDB22cc",
     "description" : "MongoDB 是一个 Nosql 数据库",
-    "xbb":"xbb"
+    "xbb":111
 })
 ******************  12，更新指定id数据  *****************
 db.lyjcollection1.find().pretty()
@@ -70,5 +76,12 @@ db.lyjcollection1.find({$or:[{"name":"yiibaitutorials5"},{"name": "yiibaitutoria
 db.lyjcollection1.find({"description":"MongoDB 是一个 Nosql 数据 库2",$or:[{"name":"yiibaitutorials5"},{"name": "yiibaitutorials6"}]})
 
 ******************  12，大于条件  *****************
-b.lyjcollection1.find({likes:{$gt:100}})
+db.lyjcollection1.find({likes:{$gt:100}})
 
+******************  12，or条件  ******************
+db.lyjcollection1.find({xbb:{$gt:100},$or:[{"name":"MongoDB22cc"}]})
+
+******************  12，limit条件  ***************
+db.lyjcollection1.find({xbb:{$gt:100},$or:[{"name":"MongoDB22cc"}]}).limit(1)
+
+******************  12，

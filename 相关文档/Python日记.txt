@@ -1,2 +1,4 @@
 中文文档：https://docs.python.org/zh-cn/3.7/
 
+PyCharm远程搭建环境：https://mp.weixin.qq.com/s/JvWJ-Hj57hfypLlhZ0XTcg
+
