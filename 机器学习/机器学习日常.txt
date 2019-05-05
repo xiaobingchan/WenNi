@@ -3,6 +3,8 @@
 《机器学习实战》Github源码地址：https://github.com/wzy6642/Machine-Learning-in-Action-Python3
 《机器学习实战》算法解析：https://blog.csdn.net/c406495762/article/details/75172850
 
+《深度学习入门：基于Python的理论与实现》
+
 机器学习向王者学习：https://blog.csdn.net/jiaoyangwm/article/list/7?
 
 莫凡：https://morvanzhou.github.io/

@@ -1,0 +1,17 @@
+postgresql官网下载：https://www.postgresql.org/ftp/source/v11.2/
+mongoDB官方下载：http://dl.mongodb.org/dl/linux/
+MySQL官方下载：https://downloads.mysql.com/archives/
+boost官方下载：https://www.boost.org/users/history/
+Redis官方下载：http://download.redis.io/releases/
+Oracle官方下载：https://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html
+
+Tomcat官方下载：  https://tomcat.apache.org/download-70.cgi
+Nginx官方下载：   http://nginx.org/en/download.html
+Weblogic官方下载： https://www.oracle.com/technetwork/middleware/weblogic/downloads/index.html
+JBoss官方下载：http://jbossas.jboss.org/downloads/
+
+
+Python官方下载：https://www.python.org/getit/
+Go官方下载：https://golang.google.cn/dl/
+Jdk官方下载：https://www.oracle.com/technetwork/java/javase/overview/index.html
+npm官方下载：https://nodejs.org/dist/

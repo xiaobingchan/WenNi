@@ -150,7 +150,7 @@ done
  
  
  
-开放端口：
+7.0开放端口：
 firewall-cmd --zone=public --add-port=端口名/tcp --permanent
 firewall-cmd --reload
  
