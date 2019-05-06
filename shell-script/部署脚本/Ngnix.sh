@@ -40,7 +40,7 @@ add_text=`sed -i "$line_number"i"$user_content" "/data/ioszdhyw/soft/nginx/conf/
 # -A INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
 # service iptables restart
 
-# firewall-cmd --zone=public --add-port=80/tcp --permanent
+# firewall-cmd --zone=public --add-port=4200/tcp --permanent
 # firewall-cmd --reload
 
 /data/ioszdhyw/bin/nginx

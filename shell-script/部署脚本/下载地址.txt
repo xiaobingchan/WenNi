@@ -7,9 +7,9 @@ Oracle官方下载：https://www.oracle.com/technetwork/database/enterprise-edit
 
 Tomcat官方下载：  https://tomcat.apache.org/download-70.cgi
 Nginx官方下载：   http://nginx.org/en/download.html
+Haproxy官方下载：https://src.fedoraproject.org/repo/pkgs/haproxy
 Weblogic官方下载： https://www.oracle.com/technetwork/middleware/weblogic/downloads/index.html
 JBoss官方下载：http://jbossas.jboss.org/downloads/
-
 
 Python官方下载：https://www.python.org/getit/
 Go官方下载：https://golang.google.cn/dl/
