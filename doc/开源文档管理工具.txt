@@ -1,0 +1,47 @@
+#############################################################
+
+RAP2
+前端：https://github.com/thx/rap2-dolores
+后端：https://github.com/thx/rap2-delos
+
+#############################################################
+
+apidoc
+已有博客：https://www.cnblogs.com/luyanjie/p/10410306.html
+
+#############################################################
+
+showdoc：
+
+cd  /var/www/html
+git clone https://github.com/star7th/showdoc
+cd showdoc
+docker build -t showdoc ./
+docker run -d --name showdoc -p 4999:80 showdoc
+http://193.112.66.88:4999/web/#/
+
+账号：showdoc
+
+
+#############################################################
+
+禅道：
+#使用文档：http://www.zentao.net/book/zentaopmshelp/90.html
+$ sudo docker pull daocloud.io/ubuntu #pull 一个ubuntu 镜像
+$ sudo docker images
+$ sudo docker run -it -p 2224:22 -p 8882:80 d131e0fa2585 /bin/bash #运行镜像
+$ sudo docker ps
+$ sudo docker attach 243e02ae7131#进入当前的容器
+$ sudo docker start 1615d91e66d3 #启动当前容器
+$ cd /opt
+$ sudo apt-get update
+$ sudo apt-get install wget
+$ sudo wget http://dl.cnezsoft.com/zentao/10.0.beta/ZenTaoPMS.10.0.beta.zbox_64.tar.gz
+$ sudo tar -xzvf ZenTaoPMS.10.0.beta.zbox_64.tar.gz
+$ sudo /opt/zbox/zbox start
+/opt/zbox/auth/adduser.sh
+
+http://118.89.23.220:8882/zentao
+
+#############################################################
+

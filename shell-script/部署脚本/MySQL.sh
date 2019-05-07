@@ -9,6 +9,7 @@
 mkdir -p /data/soft/
 cd  /data/soft/
 
+yum -y install wget
 wget https://downloads.mysql.com/archives/get/file/mysql-8.0.13-el7-x86_64.tar.gz
 
 yum -y install gcc gcc-c++ ncurses ncurses-devel cmake
