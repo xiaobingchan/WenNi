@@ -1,6 +1,7 @@
 postgresql官网下载：https://www.postgresql.org/ftp/source/v11.2/
 mongoDB官方下载：http://dl.mongodb.org/dl/linux/
 MySQL官方下载：https://downloads.mysql.com/archives/
+MySQL官方下载2：http://mysql.mirror.kangaroot.net/Downloads/
 boost官方下载：https://www.boost.org/users/history/
 Redis官方下载：http://download.redis.io/releases/
 Oracle官方下载：https://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html

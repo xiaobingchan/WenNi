@@ -14,8 +14,9 @@ wget https://downloads.mysql.com/archives/get/file/mysql-8.0.13-el7-x86_64.tar.g
 
 yum -y install gcc gcc-c++ ncurses ncurses-devel cmake
 
-tar -zxvf /data/soft/mysql-8.0.13-el7-x86_64.tar.gz -C /data/soft
-cd /data/soft/mysql-8.0.13-el7-x86_64
+tar -zxvf /data/soft/mysql-8.0.15-el7-x86_64.tar.gz -C /data/soft
+mv /data/soft/mysql-8.0.15-el7-x86_64/ /data/soft/mysql
+cd /data/soft/mysql/
 #cmake \
 #-DCMAKE_INSTALL_PREFIX=/data/soft/mysql \
 #-DMYSQL_DATADIR=/var/lib/mysql \
@@ -34,8 +35,6 @@ cd /data/soft/mysql-8.0.13-el7-x86_64
 #-DWITH_EMBEDDED_SERVER=1
 #make
 #make install
-
-mv /data/soft/mysql-8.0.13-el7-x86_64/ /data/soft/mysql
 
 #userdel mysql
 #useradd -s /sbin/nologin mysql
@@ -78,6 +77,7 @@ export PATH=\$PATH:/data/soft/mysql/bin:/data/soft/mysql/lib
 EOF
 source /etc/profile
 
+useradd mysql
 
 pkill -9 mysql
 cd /data/soft/mysql/bin/
