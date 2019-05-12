@@ -18,3 +18,7 @@ Go官方下载：https://golang.google.cn/dl/
 Jdk官方下载：https://www.oracle.com/technetwork/java/javase/overview/index.html
 npm官方下载：https://nodejs.org/dist/
 php官方下载：http://ftp.ntu.edu.tw/pub/php/distributions/
+
+消息队列：
+Kafka官方下载： https://archive.apache.org/dist/kafka/
+Pulsar官方下载：https://archive.apache.org/dist/incubator/pulsar/

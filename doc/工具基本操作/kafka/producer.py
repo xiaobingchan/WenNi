@@ -15,5 +15,5 @@ msg_dict = {
     "msg": "Hello World"
 }
 msg = json.dumps(msg_dict)
-producer.send('test_rhj', bytes(msg,'ascii'), partition=0)
+producer.send('test3', bytes(msg,'ascii'), partition=0)
 producer.close()

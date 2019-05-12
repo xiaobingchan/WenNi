@@ -6,6 +6,37 @@ RAP2
 
 #############################################################
 
+swagger
+
+前端：git clone https://github.com/swagger-api/swagger-ui
+后端：git clone https://github.com/swagger-api/swagger-editor
+npm install -g http-server
+cd swagger-editor/
+http-server -p 8000
+cd ..
+mkdir swagger
+cd swagger
+touch package.json
+npm init
+npm init package.json
+npm install express --save
+mkdir public
+cp swagger-editor/dist/ public/
+touch index.js
+vi index.js
+var express = require('express');
+var http = require('http');
+var app = express();
+app.use('/static', express.static('public'));
+app.listen(8005, function () {
+  console.log('app listening on port 8005!');
+});
+node index.js
+
+#http://118.89.23.220:8000/
+#http://118.89.23.220:8005/static/index.html
+#############################################################
+
 apidoc
 已有博客：https://www.cnblogs.com/luyanjie/p/10410306.html
 
