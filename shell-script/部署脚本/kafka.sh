@@ -20,7 +20,7 @@ cd kafka_2.11-1.0.0/
 sh bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
 sh bin/kafka-server-start.sh config/server.properties
 sh bin/kafka-topics.sh --create --zookeeper 127.0.0.1:2181 --replication-factor 1 --partitions 1 --topic test2
-sh bin/kafka-console-consumer.sh --bootstrap-server 127.0.0.1:2181 --topic test2 --from-beginning
+sh bin/kafka-console-consumer.sh --zookeeper 127.0.0.1:2181 --topic test2 --from-beginning
 sh bin/kafka-console-producer.sh --broker-list 127.0.0.1:9092 --topic test2
 
 import json

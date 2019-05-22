@@ -2,7 +2,8 @@
 
 mkdir -p /data/soft
 
-tar -xzvf redis-4.0.10.tar.gz -C /data/soft/
+wget http://download.redis.io/releases/redis-5.0.5.tar.gz
+tar -xzvf redis-5.0.5.tar.gz -C /data/soft/
 yum install -y gcc
 cd /data/soft/redis-4.0.10/deps
 make hiredis jemalloc linenoise lua

@@ -1,18 +1,36 @@
 #############################################################
 
 RAP2
-前端：https://github.com/thx/rap2-dolores
-后端：https://github.com/thx/rap2-delos
+后端：git clone https://github.com/thx/rap2-delos.git
+cd rap2-delos/
+mysql -e 'CREATE DATABASE IF NOT EXISTS RAP2_DELOS_APP DEFAULT CHARSET utf8 COLLATE utf8_general_ci'
+npm install
+npm install -g typescript
+npm run build      #初始化数据库表
+npm run create-db  #执行mocha测试用例和js代码规范检查
+npm run check      #启动开发模式的服务器 监视并在发生代码变更时自动重启
+# 1. 修改rap2-delos/dist/config/config.prod.js中的服务器配置
+vi rap2-delos/dist/config/config.prod.js
+# 2. 启动生产模式服务器
+npm run dev        #启动服务
 
+
+前端：git clone https://github.com/thx/rap2-dolores.git
+cd rap2-dolores/
+npm install
+npm run build
+npm install -g serve
+serve -s ./build -p 80
 #############################################################
 
 swagger
 
-前端：git clone https://github.com/swagger-api/swagger-ui
-后端：git clone https://github.com/swagger-api/swagger-editor
+git clone https://github.com/swagger-api/swagger-ui
+git clone https://github.com/swagger-api/swagger-editor
 npm install -g http-server
 cd swagger-editor/
 http-server -p 8000
+#############################################################
 cd ..
 mkdir swagger
 cd swagger
@@ -21,7 +39,7 @@ npm init
 npm init package.json
 npm install express --save
 mkdir public
-cp swagger-editor/dist/ public/
+cp ../swagger-ui/dist/ public/
 touch index.js
 vi index.js
 var express = require('express');
@@ -34,7 +52,7 @@ app.listen(8005, function () {
 node index.js
 
 #http://118.89.23.220:8000/
-#http://118.89.23.220:8005/static/index.html
+#http://118.89.23.220:8005/static/dist/index.html
 #############################################################
 
 apidoc
@@ -44,7 +62,6 @@ apidoc
 
 showdoc：
 
-cd  /var/www/html
 git clone https://github.com/star7th/showdoc
 cd showdoc
 docker build -t showdoc ./
@@ -70,7 +87,7 @@ $ sudo apt-get install wget
 $ sudo wget http://dl.cnezsoft.com/zentao/10.0.beta/ZenTaoPMS.10.0.beta.zbox_64.tar.gz
 $ sudo tar -xzvf ZenTaoPMS.10.0.beta.zbox_64.tar.gz
 $ sudo /opt/zbox/zbox start
-/opt/zbox/auth/adduser.sh
+$ sudo /opt/zbox/auth/adduser.sh
 
 http://118.89.23.220:8882/zentao
 

@@ -1,24 +1,32 @@
 postgresql官网下载：https://www.postgresql.org/ftp/source/v11.2/
-mongoDB官方下载：http://dl.mongodb.org/dl/linux/
-MySQL官方下载：https://downloads.mysql.com/archives/
-MySQL官方下载2：http://mysql.mirror.kangaroot.net/Downloads/
-boost官方下载：https://www.boost.org/users/history/
-Redis官方下载：http://download.redis.io/releases/
-Oracle官方下载：https://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html
+mongoDB官方下载：   http://dl.mongodb.org/dl/linux/
+MySQL官方下载：     https://downloads.mysql.com/archives/
+MySQL官方下载2：    http://mysql.mirror.kangaroot.net/Downloads/
+boost官方下载：     https://www.boost.org/users/history/
+Redis官方下载：     http://download.redis.io/releases/
+Oracle官方下载：    https://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html
+DB2官方下载：       https://pan.baidu.com/s/1BdTyF9jFnP3R9sOTSi9RNw ，提取码：bwng
 
-Tomcat官方下载：  https://tomcat.apache.org/download-70.cgi
-Nginx官方下载：   http://nginx.org/en/download.html
-pcre官方下载：    ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/
-Haproxy官方下载：https://src.fedoraproject.org/repo/pkgs/haproxy
-Weblogic官方下载： https://www.oracle.com/technetwork/middleware/weblogic/downloads/index.html
-JBoss官方下载：http://jbossas.jboss.org/downloads/
+Tomcat官方下载：    https://tomcat.apache.org/download-70.cgi
+Nginx官方下载：     http://nginx.org/en/download.html
+pcre官方下载：      ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/
+Haproxy官方下载：   https://src.fedoraproject.org/repo/pkgs/haproxy
+Weblogic官方下载：  https://www.oracle.com/technetwork/middleware/weblogic/downloads/index.html
+JBoss官方下载：     http://jbossas.jboss.org/downloads/
 
-Python官方下载：https://www.python.org/getit/
-Go官方下载：https://golang.google.cn/dl/
-Jdk官方下载：https://www.oracle.com/technetwork/java/javase/overview/index.html
-npm官方下载：https://nodejs.org/dist/
-php官方下载：http://ftp.ntu.edu.tw/pub/php/distributions/
+Python官方下载：    https://www.python.org/getit/
+Go官方下载：        https://golang.google.cn/dl/
+Jdk官方下载：       https://www.oracle.com/technetwork/java/javase/overview/index.html
+npm官方下载：       https://nodejs.org/dist/
+php官方下载：       http://ftp.ntu.edu.tw/pub/php/distributions/
 
 消息队列：
-Kafka官方下载： https://archive.apache.org/dist/kafka/
-Pulsar官方下载：https://archive.apache.org/dist/incubator/pulsar/
+Kafka官方下载：     https://archive.apache.org/dist/kafka/
+Pulsar官方下载：    https://archive.apache.org/dist/incubator/pulsar/
+
+部署
+Jenkins官方下载：   http://pkg.jenkins-ci.org/redhat-stable/
+Gitlab 官方下载：   https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/
+
+
+
