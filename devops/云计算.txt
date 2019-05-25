@@ -1,0 +1,20 @@
+百度GitHub：https://github.com/baidu
+阿里GitHub：https://github.com/alibaba
+腾讯GitHub：https://github.com/Tencent
+
+百度云：https://cloud.baidu.com/
+阿里云：https://www.aliyun.com/
+腾讯云：https://cloud.tencent.com/
+
+############################################
+
+进阶：
+
+亚马逊云计算aws：  https://aws.amazon.com/cn/
+微软云计算azure： https://azure.microsoft.com/zh-cn/
+谷歌云计算：      https://cloud.google.com/?hl=zh-cn
+
+谷歌  GitHub: https://github.com/google
+微软  GitHub：https://github.com/Azure
+亚马逊 GitHub：https://github.com/amzn
+
