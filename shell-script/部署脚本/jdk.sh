@@ -6,7 +6,7 @@ eval $pid # 删除已经存在的JAVA_HOME环境变量
 pid="sed -i '/export CLASSPATH/d' /etc/profile"
 eval $pid # 删除已经存在的CLASSPATH环境变量
 cat >> /etc/profile <<EOF
-export JAVA_HOME=/usr/java/jdk1.8.0_152
+export JAVA_HOME=/home/luyanjie/jdk1.8.0_202
 export CLASSPATH=%JAVA_HOME%/lib:%JAVA_HOME%/jre/lib
 export PATH=\$PATH:\$JAVA_HOME/bin
 EOF

@@ -5,27 +5,27 @@ wget http://downloads.mongodb.org/linux/mongodb-linux-x86_64-rhel70-v3.4-latest.
 
 tar -xvzf mongodb-linux-x86_64-rhel70-latest.tgz -C /data/soft/
 mv /data/soft/mongodb-linux-x86_64-rhel70-4.1.10-309-g4a2b759/ /data/soft/mongodb/
-mkdir /data/soft/mongodb/data
-mkdir /data/soft/mongodb/log
-mkdir /data/soft/mongodb/etc
-touch /data/soft/mongodb/log/mongo.log
+mkdir /home/luyanjie/mongodb/data
+mkdir /home/luyanjie/mongodb/log
+mkdir /home/luyanjie/mongodb/etc
+touch /home/luyanjie/mongodb/log/mongo.log
 cat  >> /etc/profile << EOF
-export PATH=$PATH:/data/soft/mongodb/bin
+export PATH=$PATH:/home/luyanjie/mongodb/bin
 EOF
 source /etc/profile
-chown -R 777 /data/soft/mongodb/data
-chown -R 777 /data/soft/mongodb/log
-chown -R 777 /data/soft/mongodb/etc
-cat  >> /data/soft/mongodb/mongodb.conf << EOF
-dbpath=/data/soft/mongodb/data/
-logpath=/data/soft/mongodb/log/mongo.log
+chown -R 777 /home/luyanjie/mongodb/data
+chown -R 777 /home/luyanjie/mongodb/log
+chown -R 777 /home/luyanjie/mongodb/etc
+cat  >> /home/luyanjie/mongodb.conf << EOF
+dbpath=/home/luyanjie/mongodb/data/
+logpath=/home/luyanjie/mongodb/log/mongo.log
 logappend=true
 quiet=true
 port=20000
 fork=true
 bind_ip=0.0.0.0
 EOF
-/data/soft/mongodb/bin/mongod --config /data/soft/mongodb/mongodb.conf
+/home/luyanjie/mongodb/bin/mongod --config /data/soft/mongodb/mongodb.conf
 
 # 启动mongoDB：/data/soft/mongodb/bin/mongo --port=20000
 
