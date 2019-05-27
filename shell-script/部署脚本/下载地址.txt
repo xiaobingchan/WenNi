@@ -11,7 +11,9 @@ Tomcat官方下载：    https://tomcat.apache.org/download-70.cgi
 Nginx官方下载：     http://nginx.org/en/download.html
 pcre官方下载：      ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/
 Haproxy官方下载：   https://src.fedoraproject.org/repo/pkgs/haproxy
+Weblogic官方下载：  https://www.oracle.com/tec
 Weblogic官方下载：  https://www.oracle.com/technetwork/middleware/weblogic/downloads/index.html
+JBoss官方下载：     hnetwork/middleware/weblogic/downloads/index.html
 JBoss官方下载：     http://jbossas.jboss.org/downloads/
 
 Python官方下载：    https://www.python.org/getit/
@@ -25,7 +27,7 @@ Kafka官方下载：     https://archive.apache.org/dist/kafka/
 Pulsar官方下载：    https://archive.apache.org/dist/incubator/pulsar/
 
 部署
-Jenkins官方下载：   http://pkg.jenkins-ci.org/redhat-stable/
+Jenkins官方下载：   http://pkg.jenkins-ci.org/http://pkg.jenkins-ci.org/
 Gitlab 官方下载：   https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/
 
 

@@ -16,7 +16,7 @@ source /etc/profile
 
 wget https://archive.apache.org/dist/kafka/1.0.0/kafka_2.11-1.0.0.tgz
 tar -zxvf kafka_2.11-1.0.0.tgz -C /usr/local/
-cd kafka_2.11-1.0.0/
+cd /usr/local/kafka_2.11-1.0.0/
 sh bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
 sh bin/kafka-server-start.sh config/server.properties
 sh bin/kafka-topics.sh --create --zookeeper 127.0.0.1:2181 --replication-factor 1 --partitions 1 --topic test2
