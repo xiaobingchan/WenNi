@@ -1,0 +1,19 @@
+#############################初步###########################
+
+渠道：前程无忧、拉勾
+
+关键词：(运维 Django)，（运维 Devops）、（运维开发）、Openstack、cmdb
+
+基本技能：
+0，语言：Python（Django或Flask框架）、Go
+1，监控：Nagios、Zabbix
+2，Git CI ：Gitlab、Jenkis
+3，容器：Docker（Kubernetes，k8s）
+4，自动化工具：puppet、Ansible、Salt（saltstack）
+5，自动化运维平台：Openstack、
+6，负载均衡：Haproxy、Nginx、
+7，数据存储：Hadoop（HDFS）
+8，！！蓝鲸CMDB
+
+加分技能：ELK、中间件性能调优、搭建私有云、虚拟化（VMware、Vagrant、Vitualbox）、KVM、消息队列（Kafka）
+
