@@ -14,6 +14,7 @@ remote_port = 22
 private_key_file = /root/.ssh/id_rsa
 
 vim /etc/ansible/hosts
+# 配置执行机器
 [storm_cluster]
 192.168.56.1
 192.168.56.2
