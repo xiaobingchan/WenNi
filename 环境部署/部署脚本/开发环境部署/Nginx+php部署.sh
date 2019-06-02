@@ -41,6 +41,7 @@ php -v
 wget https://dl.laravel-china.org/composer.phar -O /usr/local/bin/composer
 chmod a+x /usr/local/bin/composer
 composer -v
+composer config -g repo.packagist composer https://packagist.phpcomposer.com
 
 cd  /usr/local/
 wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.38.tar.gz

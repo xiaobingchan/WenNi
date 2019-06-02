@@ -10,9 +10,8 @@ yum install -y wget unzip lrzsz nmap tree dos2unix nc bc
 
 # yum源换阿里源
 mkdir -p /etc/yum.repos.d/{default,back}
-mv /etc/yum.repos.d/repo /etc/yum.repos.d/default
-wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo
 cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/default
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 
 # 防火墙增加端口
 firewall-cmd --zone=public --add-port=22/tcp --permanent

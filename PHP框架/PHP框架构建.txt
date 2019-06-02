@@ -1,0 +1,47 @@
+***************** 安装lavaral  **********************
+wget https://dl.laravel-china.org/composer.phar -O /usr/local/bin/composer
+chmod a+x /usr/local/bin/composer
+composer -v
+composer config -g repo.packagist composer https://packagist.phpcomposer.com
+composer global require laravel/installer
+composer global update
+composer create-project --prefer-dist laravel/laravel laravel
+chmod -R 777 laravel/
+
+# http://www.yanjushe.com/laravel/public/index.php
+
+***************** 安装lumen  **********************
+wget https://dl.laravel-china.org/composer.phar -O /usr/local/bin/composer
+chmod a+x /usr/local/bin/composer
+composer -v
+composer config -g repo.packagist composer https://packagist.phpcomposer.com
+composer global require laravel/lumen-installer
+composer global update
+composer create-project --prefer-dist laravel/lumen lumen
+
+# http://www.yanjushe.com/lumen/public/index.php
+
+***************** 安装php redis扩展  **********************
+wget http://pecl.php.net/get/redis-3.1.2.tgz
+tar -zxvf redis-3.1.2.tgz
+cd redis-3.1.2/
+phpize
+./configure --with-php-config=/usr/local/php/bin/php-config
+make
+make install
+
+***************** 安装php swoole扩展  **********************
+#  swoole官方文档：https://wiki.swoole.com/wiki/index/prid-1
+
+wget https://github.com/swoole/swoole-src/archive/v4.3.4.tar.gz
+tar -xzvf v4.3.4.tar.gz
+cd swoole-src-4.3.4/
+phpize
+./configure --with-php-config=/usr/local/php/bin/php-config
+make
+make install
+
+****************  docker 安装 swoft  *********************
+docker pull swoft/swoft
+docker run -p 8088:80 swoft/swoft
+

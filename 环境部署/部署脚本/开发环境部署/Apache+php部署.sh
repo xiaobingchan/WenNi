@@ -57,6 +57,10 @@ cp /usr/local/php/etc/php-fpm.d/www.conf.default /usr/local/php/etc/php-fpm.d/ww
 cp /usr/local/php-7.3.5/sapi/fpm/init.d.php-fpm /etc/init.d/php-fpm
 chmod 755 /etc/init.d/php-fpm
  /etc/init.d/php-fpm start
+ wget https://dl.laravel-china.org/composer.phar -O /usr/local/bin/composer
+chmod a+x /usr/local/bin/composer
+composer -v
+composer config -g repo.packagist composer https://packagist.phpcomposer.com
 
 cp /usr/local/php/bin/* /usr/bin/
 php -v
