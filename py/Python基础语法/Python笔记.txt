@@ -1,0 +1,138 @@
+import pyth_head.function1 as p1#分头文件提取
+from Student import * #引入类
+import time
+import os
+import math
+
+def move(x, y, step, angle=0):
+ nx = x + step * math.cos(angle)
+ ny = y - step * math.sin(angle)
+ return nx, ny
+
+if __name__=="__main__":
+ classmates = (1,3,2) #定义一个tuple，tuple元素不可变
+ #print('tuple:'+str(classmates[1]))
+ for my_info in classmates:
+  print("tuple索引：%s，值：%s" % (classmates.index(my_info), my_info))
+
+ classmates_list = [1,3,2] #定义一个list，list是可变的
+ #print('list:'+str(classmates_list[1]))
+ for i in classmates_list:
+  print("List索引：%s，值：%s" % (classmates_list.index(i), i))
+
+ d = {'Michael': 95, 'Bob': 75, 'Tracy': 85} #定义一个dict，dict是可变的
+ #print('dict:'+str(d['Michael']))
+ for key in d:
+  print("dict的key:"+str(key)+'，dict的value:'+str(d[key]))
+
+ s = set([3,5,9,10])  #定义一个set，里面是list，set是不可变
+ s2 = set([3,6,9,10])
+ print('set交集操作：'+str(s&s2)); #set和dict都是哈希操作
+ #tuple所谓的“不变”是说，tuple的每个元素，指向永远不变。即指向'a'，就不能改成指向'b'，指向一个list，就不能改成指向其他对象，但指向的这个list本身是可变的！
+ #dict查找速度快，消耗内存多
+ #set用作集合处理，与list连用
+ t = ('a', 'b', ['A', 'B'])
+ L = t[2]
+ L[0] = 2
+ print('tuple里面的list可通过指针改变:'+str(t));#tuple里面的list可通过指针改变
+
+ a=3
+ if a>10:
+  print('if语句的应用：a>10')
+ elif (a>2 and a<8):
+  print('elif语句的应用：')
+ else:
+  print('else语句的应用：a<10')
+
+ for a in range(2):
+  print('for循环：'+str(a))
+
+#while 1>0:#print('w')#while循环
+
+ bart = Student('Bart Simpson', 59) #初始化类
+ Student.print_score(bart) #调用类中方法
+ print('获取类型：'+str(type(bart)));
+
+ date_str="20190113T10453689797";
+ print('切割字符串：'+str(date_str.split('T')))
+
+ number=5.235
+ print('5.235保留两位小数：'+str(round(number,2)))#python四舍五入保留两位小数
+
+ # 字符类型的时间
+ tss1 = '2019-01-13 10:40:00'
+ # 转为时间数组
+ timeArray = time.strptime(tss1, "%Y-%m-%d %H:%M:%S")
+ # 转为时间戳
+ timeStamp = int(time.mktime(timeArray))
+ print(timeStamp)
+
+ #时间戳转换成时间
+ timeArray = time.localtime(timeStamp)
+ otherStyleTime = time.strftime("%Y-%m-%d %H:%M:%S", timeArray)
+ print(otherStyleTime)
+
+ #遍历文件夹以及文件
+ path="/home/Share_Project/Python"
+ for i in os.walk(path):
+  print(i)
+
+ print(move(0.1,0.2,2))#调用本类的方法
+
+ try:
+  error=1/0#初始化类
+  print(error)
+ except Exception as e:
+  print('Error:', e)
+ finally:
+  print('finally...')
+
+ shell_out=os.popen('ls /usr/bin/').readlines() #执行shell脚本并获得返回
+ print(type(shell_out))
+
+##############Python3多线程###############
+#!/usr/bin/python36
+# -*- coding: UTF-8 -*-
+
+import threading
+import time
+
+class myThread (threading.Thread):
+    def __init__(self, threadID, name, counter):
+        threading.Thread.__init__(self)
+        self.threadID = threadID
+        self.name = name
+        self.counter = counter
+    def run(self):
+        print ("开启线程： " + self.name)
+        # 获取锁，用于线程同步
+        threadLock.acquire()
+        print_time(self.name, self.counter, 3)
+        # 释放锁，开启下一个线程
+        threadLock.release()
+
+def print_time(threadName, delay, counter):
+    while counter:
+        time.sleep(delay)
+        print ("%s: %s" % (threadName, time.ctime(time.time())))
+        counter -= 1
+
+threadLock = threading.Lock()
+threads = []
+
+# 创建新线程
+thread1 = myThread(1, "Thread-1", 1)
+thread2 = myThread(2, "Thread-2", 1)
+
+# 开启新线程
+thread1.start()
+thread2.start()
+
+# 添加线程到线程列表
+threads.append(thread1)
+threads.append(thread2)
+
+# 等待所有线程完成
+for t in threads:
+    t.join()
+print ("退出主线程");
