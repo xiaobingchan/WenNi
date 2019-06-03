@@ -15,5 +15,5 @@
 7，数据存储：Hadoop（HDFS）
 8，！！蓝鲸CMDB
 
-加分技能：ELK、中间件性能调优、搭建私有云、虚拟化（VMware、Vagrant、Vitualbox）、KVM、消息队列（Kafka）
+加分技能：ELK、中间件性能调优、搭建私有云（Openstack）、虚拟化（VMware、Vagrant、Vitualbox）、KVM、消息队列（Kafka）
 
