@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# https://www.cnblogs.com/wenwei-blog/p/5861450.html
-# https://packages.gitlab.com/gitlab/gitlab-ce
+# gitlab搭建教程：https://www.cnblogs.com/wenwei-blog/p/5861450.html
+# gitlab下载列表：https://packages.gitlab.com/gitlab/gitlab-ce
 
 yum -y install policycoreutils openssh-server openssh-clients postfix
 systemctl enable postfix && systemctl start postfix

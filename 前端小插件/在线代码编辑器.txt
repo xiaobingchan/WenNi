@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-git clone https://github.com/ajaxorg/ace
+git clone https://github.com/ajaxorg/ace-builds.git
 
-# 实例用法：https://ace.c9.io/
+# 实例用法：https://github.com/ajaxorg/ace-builds
