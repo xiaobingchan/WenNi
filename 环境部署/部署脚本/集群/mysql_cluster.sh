@@ -25,7 +25,7 @@ cat > config.ini << EOF
 DataDir=/var/lib/mysql-cluster
 [ndb_mgmd]
 #Management Node db1
-HostName=192.168.56.1
+HostName=10.0.2.15
 [ndbd default]
 NoOfReplicas=1      # Number of replicas
 DataMemory=256M     # Memory allocate for data storage
@@ -34,10 +34,10 @@ IndexMemory=128M    # Memory allocate for index storage
 DataDir=/var/lib/mysql-cluster
 [ndbd]
 #Data Node db2
-HostName=192.168.240.114
+HostName=10.0.2.18
 [mysqld]
 #SQL Node db3
-HostName=192.168.240.113
+HostName=10.0.2.19
 EOF
 chown -R mysql:mysql /var/lib/mysql-cluster
 firewall-cmd --zone=public --add-port=1186/tcp --permanent
@@ -53,9 +53,9 @@ chown -R mysql:mysql /var/lib/mysql
 cat > /etc/my.cnf << EOF
 [mysqld]
 ndbcluster
-ndb-connectstring=192.168.240.112
+ndb-connectstring=192.168.56.1
 [mysql_cluster]
-ndb-connectstring=192.168.240.112
+ndb-connectstring=192.168.56.1
 EOF
 firewall-cmd --zone=public --add-port=1186/tcp --permanent
 firewall-cmd --reload

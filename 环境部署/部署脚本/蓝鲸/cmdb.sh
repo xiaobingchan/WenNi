@@ -50,6 +50,17 @@ use cmdb
 db.createUser({user: "cc",pwd: "cc",roles: [ { role: "readWrite", db: "cmdb" } ]})
 
 cd /root
+rpm -ivh jdk-8u152-linux-x64.rpm
+pid="sed -i '/export JAVA_HOME/d' /etc/profile"
+eval $pid
+pid="sed -i '/export CLASSPATH/d' /etc/profile"
+eval $pid
+cat >> /etc/profile <<EOF
+export JAVA_HOME=/usr/java/jdk1.8.0_152
+export CLASSPATH=%JAVA_HOME%/lib:%JAVA_HOME%/jre/lib
+export PATH=\$PATH:\$JAVA_HOME/bin
+EOF
+source /etc/profile
 wget http://mirror.bit.edu.cn/apache/zookeeper/zookeeper-3.4.14/zookeeper-3.4.14.tar.gz
 tar -zxvf zookeeper-3.4.14.tar.gz
 cd zookeeper-3.4.14/src/c/
@@ -70,7 +81,7 @@ cd /root
 wget https://github.com/Tencent/bk-cmdb/releases/download/release-v3.2.2/cmdb_oc_v3.2.2.tgz
 tar -xvzf cmdb_oc_v3.2.2.tgz -C /usr/local
 cd /usr/local/cmdb_oc_v3.2.2/
-python init.py --discovery 127.0.0.1:2181 --database cmdb --redis_ip 127.0.0.1 --redis_port 6379 --redis_pass 12345678 --mongo_ip 127.0.0.1 --mongo_port 27017 --mongo_user cc --mongo_pass cc --blueking_cmdb_url http://127.0.0.1:8083 --listen_port 8083
+python init.py --discovery 127.0.0.1:2181 --database cmdb --redis_ip 127.0.0.1 --redis_port 6379 --redis_pass 12345678 --mongo_ip 127.0.0.1 --mongo_port 27017 --mongo_user cc --mongo_pass cc --blueking_cmdb_url http://www.yanjushe.com:8083 --listen_port 8083
 /usr/local/cmdb_oc_v3.2.2/start.sh
 /usr/local/cmdb_oc_v3.2.2/init_db.sh
 

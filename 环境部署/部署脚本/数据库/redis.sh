@@ -1,26 +1,15 @@
 #!/usr/bin/env bash
-
-mkdir -p /data/soft
-
 wget http://download.redis.io/releases/redis-5.0.5.tar.gz
-tar -xzvf redis-5.0.5.tar.gz -C /data/soft/
+tar -xzvf redis-5.0.5.tar.gz -C /usr/local/
 yum install -y gcc
-cd /data/soft/redis-4.0.10/deps
+cd /usr/local/redis-5.0.5/deps
 make hiredis jemalloc linenoise lua
-cd /data/soft/redis-4.0.10
+cd /usr/local/redis-5.0.5
 make MALLOC=libc
-
-mv /data/soft/redis-4.0.10 /data/soft/redis/
-
-#增加配置
-cluster-enabled yes
-cluster-config-file nodes-6379.conf
-cluster-node-timeout 15000
-pidfile /var/run/redis_6379.pid
-
 firewall-cmd --zone=public --add-port=6379/tcp --permanent
 firewall-cmd --reload
+/usr/local/redis/src/redis-server /usr/local/redis/redis.conf
 
-/data/soft/redis/src/redis-server /data/soft/redis/redis.conf
+
 
 

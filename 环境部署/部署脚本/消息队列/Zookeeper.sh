@@ -1,4 +1,17 @@
 #!/usr/bin/env bash
+
+rpm -ivh jdk-8u152-linux-x64.rpm
+pid="sed -i '/export JAVA_HOME/d' /etc/profile"
+eval $pid
+pid="sed -i '/export CLASSPATH/d' /etc/profile"
+eval $pid
+cat >> /etc/profile <<EOF
+export JAVA_HOME=/usr/java/jdk1.8.0_152
+export CLASSPATH=%JAVA_HOME%/lib:%JAVA_HOME%/jre/lib
+export PATH=\$PATH:\$JAVA_HOME/bin
+EOF
+source /etc/profile
+
 cd /root
 wget http://mirror.bit.edu.cn/apache/zookeeper/zookeeper-3.4.14/zookeeper-3.4.14.tar.gz
 tar -zxvf zookeeper-3.4.14.tar.gz
