@@ -105,12 +105,44 @@ mysql -u root -p
 CREATE DATABASE `bk_sops` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 ##############################################
 
-vi /root/bk-sops/scripts/develop/sites/community/env.sh
+cat >/root/bk-sops/scripts/develop/sites/community/env.sh << EOF
+export APP_ID="bk_sops"
+export APP_TOKEN="123456"
+export BK_PAAS_HOST="http://127.0.0.1:8001"
+export BK_CC_HOST="http://127.0.0.1:8083"
+export BK_JOB_HOST="http://127.0.0.1:8009"
+export RUN_VER="open"
+export OPEN_VER="community"
+EOF
+source /root/bk-sops/scripts/develop/sites/community/env.sh
+cd /root/bk-sops
+python manage.py migrate
+python manage.py createcachetable django_cache
+python manage.py collectstatic --noinput
+rm -rf static/dev static/images
+mv frontend/desktop/static/dev static/
+mv frontend/desktop/static/images static/
+python manage.py celery worker -l info
+python manage.py runserver 8000
 
+cd /root/bk-PaaS/paas-ce/paas/paas/
+python manage.py runserver 8001
+cd /root/bk-PaaS/paas-ce/paas/login/
+python manage.py runserver 8003
+cd /root/bk-PaaS/paas-ce/paas/appengine/
+python manage.py runserver 8000
+cd /root/bk-PaaS/paas-ce/paas/esb/
+python manage.py runserver 8002
+
+/root/zookeeper-3.4.14/bin/zkServer.sh start
+/usr/local/mongodb/bin/mongod --config /usr/local/mongodb/mongodb.conf
+/usr/local/redis/src/redis-server /usr/local/redis/redis.conf
+/usr/local/cmdb_oc_v3.2.2/start.sh
 
 yum install epel-release
 yum install nodejs
 cd /root/bk-sops/frontend/desktop/
 npm install
-npm run build -- --STATIC_ENV=dev
+npm run dev
+
 

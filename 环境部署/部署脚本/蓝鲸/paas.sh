@@ -26,6 +26,8 @@ read_rnd_buffer_size = 512K
 myisam_sort_buffer_size = 8M
 basedir=/usr/local/mysql
 datadir=/var/lib/mysql
+default_authentication_plugin=mysql_native_password
+bind-address=0.0.0.0
 EOF
 mkdir -p /var/lib/mysql
 chmod -R 777 /var/lib/mysql
