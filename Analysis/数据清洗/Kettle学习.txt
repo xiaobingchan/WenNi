@@ -6,3 +6,5 @@ ELT数据抽取，转换，清洗工具Kettle官方示例：https://www.cnblogs.
 入门4：https://ask.hellobi.com/blog/yuguiyang1990/category/1888
 
 MySQL(Postgresql)连接错误，找不对mysql驱动jar包：https://blog.csdn.net/a15020059230/article/details/72823039
+
+Kettle安装 Windows （依赖jdk）：

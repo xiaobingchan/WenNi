@@ -22,3 +22,6 @@ cd nifi-1.9.2/bin
 ./nifi.sh run
 
 
+Windows下载地址：https://www.apache.org/dyn/closer.lua?path=/nifi/1.9.2/nifi-1.9.2-bin.zip
+Linux下载地址：  https://www.apache.org/dyn/closer.lua?path=/nifi/1.9.2/nifi-1.9.2-bin.tar.gz
+
