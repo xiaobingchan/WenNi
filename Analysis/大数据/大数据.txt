@@ -3,3 +3,17 @@ Spark学习平台：
 ELT数据抽取，转换，清洗工具Kettle：https://www.cnblogs.com/zhangchenliang/p/4179775.html
 
 Ebay开源数据BI可视化web框架Pulsar Reporting：https://github.com/pulsarIO
+
+wget http://mirrors.aliyun.com/apache/pig/pig-0.17.0/pig-0.17.0.tar.gz
+
+wget https://mirrors.cnnic.cn/apache/hive/hive-1.2.2/apache-hive-1.2.2-bin.tar.gz
+
+wget https://mirrors.cnnic.cn/apache/mahout/0.11.0/apache-mahout-distribution-0.11.0.tar.gz
+
+wget https://mirrors.cnnic.cn/apache/hbase/1.3.5/hbase-1.3.5-bin.tar.gz
+
+wget http://mirror.bit.edu.cn/apache/sqoop/1.4.7/sqoop-1.4.7.bin__hadoop-2.6.0.tar.gz
+
+wget http://mirrors.hust.edu.cn/apache/flume/1.5.2/apache-flume-1.5.2-bin.tar.gz
+
+wget http://labfile.oss.aliyuncs.com/courses/237/chukwa-0.5.0-rc3.tar.gz
