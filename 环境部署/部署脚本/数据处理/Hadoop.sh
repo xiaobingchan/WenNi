@@ -74,6 +74,9 @@ vi /usr/local/hadoop/etc/hadoop/hdfs-site.xml <<EOF
 </configuration>
 EOF
 
+cat >> /usr/local/hadoop/etc/hadoop/log4j.properties <<EOF
+log4j.logger.org.apache.hadoop.util.NativeCodeLoader=ERROR
+EOF
 systemctl stop firewalld
 
 /usr/local/hadoop/bin/hdfs namenode -format
