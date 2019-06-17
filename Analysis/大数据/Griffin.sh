@@ -2,8 +2,6 @@
 
 # 搭建教程：https://www.liangzl.com/get-article-detail-39154.html
 
-
-
 JDK (1.8 or later versions)
 MySQL(version 5.6及以上)
 Hadoop (2.6.0 or later)
@@ -191,3 +189,34 @@ jps
 schematool -initSchema -dbType mysql
 hive
 ################################################################################################
+tar -xzvf spark-2.3.3-bin-hadoop2.6.tgz -C /usr/local/
+mv /usr/local/spark-2.3.3-bin-hadoop2.6/ /usr/local/spark
+cat >> /etc/profile <<EOF
+export SPARK_HOME=/usr/local/spark
+export PATH=\$PATH:\$SPARK_HOME/bin
+EOF
+source /etc/profile # 刷新环境变量
+cp -r /usr/local/spark/conf/spark-env.sh.template /usr/local/spark/conf/spark-env.sh
+cat >>  /usr/local/spark/conf/spark-env.sh <<EOF
+export JAVA_HOME=/usr/java/jdk1.8.0_152/
+export SPARK_MASTER_IP=master
+export SPARK_WORKER_CORES=1
+export SPARK_WORKER_MEMORY=1g
+export SPARK_WORKER_INSTANCES=2
+export SPARK_HISTORY_OPTS="-Dspark.history.ui.port=18080 -Dspark.history.retainedApplications=3 -Dspark.history.fs.logDirectory=hdfs://master:9000/historyServerForSpark/logs"
+export SPARK_DAEMON_JAVA_OPTS="-Dspark.deploy.recoveryMode=FILESYSTEM -Dspark.deploy.recoveryDirectory=/usr/local/spark/recovery"
+EOF
+cp -r /usr/local/spark/conf/spark-defaults.conf.template /usr/local/spark/conf/spark-defaults.conf
+cat >>  /usr/local/spark/conf/spark-defaults.conf <<EOF
+spark.master  spark://localhost:7077
+spark.network.timeout 500
+EOF
+
+/usr/local/spark/sbin/start-all.sh
+spark
+################################################################################################
+wget http://mirror.bit.edu.cn/apache/incubator/livy/0.6.0-incubating/apache-livy-0.6.0-incubating-bin.zip
+unzip apache-livy-0.6.0-incubating-bin.zip
+mkdir -p /root/apache-livy-0.6.0-incubating-bin/logs
+chmod -R 777 /root/apache-livy-0.6.0-incubating-bin/logs
+/root/apache-livy-0.6.0-incubating-bin/bin/livy-server

@@ -10,6 +10,8 @@ export PATH=\$PATH:\$SCALA_HOME/bin
 EOF
 source /etc/profile # 刷新环境变量
 
+***********************************************************************************************
+
 wget https://mirrors.cnnic.cn/apache/spark/spark-2.3.3/spark-2.3.3-bin-hadoop2.6.tgz
 tar -xzvf spark-2.3.3-bin-hadoop2.6.tgz -C /usr/local/
 mv /usr/local/spark-2.3.3-bin-hadoop2.6/ /usr/local/spark

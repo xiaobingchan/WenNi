@@ -34,7 +34,6 @@ http.cors.allow-origin: "*"
 bootstrap.memory_lock: false
 bootstrap.system_call_filter: false
 ##########################################################################
-
 cat >> /etc/sysctl.conf  << EOF
 vm.max_map_count=655360
 EOF
@@ -57,6 +56,8 @@ chown -R elk:elk /data/elk/
 chown -R elk:elk /usr/local/elasticsearch-5.3.1/
 su elk
 /usr/local/elasticsearch-5.3.1/bin/elasticsearch
+
+
 
 wget https://artifacts.elastic.co/downloads/logstash/logstash-5.3.1.tar.gz
 tar -zxvf logstash-5.3.1.tar.gz  -C /usr/local/
