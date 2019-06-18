@@ -1,3 +1,8 @@
+Nifi函数定义：https://blog.csdn.net/zhanglong_4444/article/details/88652464
+Nifi函数官方文档：https://nifi.apache.org/docs/nifi-docs/
+Nifi-API官方文档：https://nifi.apache.org/docs/nifi-docs/rest-api/index.html
+（实例：http://127.0.0.1:8080/nifi-api/flow/about）
+
+
 1，mysql  数据清洗：https://www.cnblogs.com/h--d/p/10102805.html
 2，monogo 数据清洗：https://blog.csdn.net/qq0719/article/details/84062283
-

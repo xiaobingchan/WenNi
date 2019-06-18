@@ -151,7 +151,7 @@ done
  
  
 7.0开放端口：
-firewall-cmd --zone=public --add-port=端口名/tcp --permanent
+firewall-cmd --zone=public --add-port=80/tcp --permanent
 firewall-cmd --reload
  
 关闭防火墙：
