@@ -5,4 +5,23 @@ Nifi-API官方文档：https://nifi.apache.org/docs/nifi-docs/rest-api/index.htm
 
 
 1，mysql  数据清洗：https://www.cnblogs.com/h--d/p/10102805.html
+(jdbc:mysql://127.0.0.1:3306/aomm;com.mysql.jdbc.Driver;mysql-connector-java-5.1.22-bin.jar)
 2，monogo 数据清洗：https://blog.csdn.net/qq0719/article/details/84062283
+放入mongodb：https://blog.csdn.net/qq_41562735/article/details/89049276
+放入ElasticSearch：https://blog.csdn.net/suphieLiang/article/details/78393766
+(mongodb://127.0.0.1:20000)
+3，postgresql数据清洗：
+(jdbc:postgresql://127.0.0.1:5432/aomm;org.postgresql.Driver;postgresql-9.3-1101-jdbc4.jar)
+4，Oracle数据清洗：
+(jdbc:oracle:thin:@localhost:1521:orcl;oracle.jdbc.driver.OracleDriver;ojdbc6.jar)
+5，
+
+模板流程：https://my.oschina.net/u/2306127/blog/869775
+
+Windows启动MongoDB：        F:\MongoDB\Server\3.2\bin\mongod.exe --dbpath F:\MongoDB\Server\3.2\db --port 20000
+                            F:\MongoDB\Server\3.2\bin\mongo.exe --port 20000
+Windows启动Postgresql：     net start postgresql-x64-9.4
+Windows启动MySQL：
+Windows启动Elasticserach：
+Windows启动Kakfa：
+HTTP：http://127.0.0.1:8080/nifi-api/flow/about
