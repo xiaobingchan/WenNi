@@ -12,3 +12,13 @@ make && make install  # 编译安装
 
 ln -s /root/python3_5/bin/pip3 /usr/bin/  # 创建python3软链接
 ln -s /root/python3_5/bin/pip3 /usr/bin/  # 创建pip3软链接
+
+##################################################################
+
+wget  https://www.python.org/ftp/python/2.7.16/Python-2.7.16.tgz
+tar zxvf Python-2.7.16.tgz
+cd `echo Python-2.7.16.tgz |awk 'BEGIN{FS="/"}''{print $NF}'| awk -F".tgz" '{print $NR}'`
+./configure  --prefix=/home/luyanjie/python2_7_16
+make && make install
+ln -s /home/luyanjie/python2_7_16/bin/python /usr/bin
+ln -s /home/luyanjie/python2_7_16/bin/python2 /usr/bin
