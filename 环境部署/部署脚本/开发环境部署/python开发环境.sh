@@ -10,7 +10,7 @@ cd `echo Python-3.5.4.tgz |awk 'BEGIN{FS="/"}''{print $NF}'| awk -F".tgz" '{prin
 ./configure  --prefix=/root/python3_5  # 指定编译安装位置
 make && make install  # 编译安装
 
-ln -s /root/python3_5/bin/pip3 /usr/bin/  # 创建python3软链接
+ln -s /root/python3_5/bin/pip3 /usr/bin/python3  # 创建python3软链接
 ln -s /root/python3_5/bin/pip3 /usr/bin/  # 创建pip3软链接
 
 ##################################################################

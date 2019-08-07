@@ -22,6 +22,7 @@ make && make install
 cd /usr/local/
 tar -zxvf apr-util-1.6.1.tar.gz
 cd apr-util-1.6.1
+yum -y install expat-devel
  ./configure --prefix=/usr/local/apr-util/ --with-apr=/usr/local/apr/
 make && make install
 

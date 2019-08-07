@@ -1,0 +1,93 @@
+0，安装openssl 1.0.2
+############################################################
+rpm -qa | grep openssl
+wget http://www.openssl.org/source/openssl-1.0.2j.tar.gz
+tar -xzvf openssl-1.0.2j.tar.gz
+cd openssl-1.0.2j
+./config --prefix=/usr/local/openssl shared zlib
+make && make install
+echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/openssl/lib" >> /etc/profile
+source /etc/profile
+mv /usr/bin/openssl  /usr/bin/openssl.old
+mv /usr/include/openssl  /usr/include/openssl.old
+ln -s /usr/local/openssl/bin/openssl  /usr/bin/openssl
+ln -s /usr/local/openssl/include/openssl  /usr/include/openssl
+ln -s /usr/local/openssl/lib/libssl.so /usr/local/lib64/libssl.so
+strings /usr/local/lib64/libssl.so |grep OpenSSL
+echo "/usr/local/ssl/lib" >> /etc/ld.so.conf
+ldconfig -v
+
+
+############################################################
+
+1，搭建python3.7和pip3
+############################################################
+yum install -y zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel libffi-devel expat-devel gdbm-devel readline-devel gcc gcc-c++  # 安装python3依赖库
+rpm -ivh libffi-devel-3.0.5-3.2.el6.x86_64.rpm
+wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tgz
+tar -zxvf Python-3.7.0.tgz
+cd `echo Python-3.7.0.tgz |awk 'BEGIN{FS="/"}''{print $NF}'| awk -F".tgz" '{print $NR}'`
+./configure  --prefix=/root/python3_7  --with-openssl=/usr/local/openssl # 指定编译安装位置
+make && make install  # 编译安装
+ln -s /root/python3_7/bin/python3 /usr/bin/python3  # 创建python3软链接
+ln -s /root/python3_7/bin/pip3 /usr/bin/pip3  # 创建pip3软链接
+############################################################
+
+2，离线安装tornado 6.0.2
+############################################################
+wget https://files.pythonhosted.org/packages/30/78/2d2823598496127b21423baffaa186b668f73cd91887fcef78b6eade136b/tornado-6.0.3.tar.gz
+tar -xzvf tornado-6.0.3.tar.gz
+cd tornado-6.0.3
+python3 setup.py build
+python3 setup.py install
+############################################################
+
+3，离线安装pymsql
+############################################################
+wget https://files.pythonhosted.org/packages/da/15/23ba6592920e21cb40eb0fe0ea002d2b6177beb1ca8a4c1add5a8f32754d/PyMySQL-0.9.3.tar.gz
+tar -xzvf PyMySQL-0.9.3.tar.gz
+cd PyMySQL-0.9.3
+python3 setup.py build
+python3 setup.py install
+############################################################
+
+4，离线安装tormysql
+############################################################
+wget https://files.pythonhosted.org/packages/f8/e8/b30ae23b45f69aa3f024b46064c0ac8e5fcb4f22ace0dca8d6f9c8bbe5e7/greenlet-0.4.15.tar.gz
+tar -xzvf greenlet-0.4.15.tar.gz
+cd greenlet-0.4.15
+python3 setup.py build
+python3 setup.py install
+############################################################
+############################################################
+wget https://files.pythonhosted.org/packages/74/cd/6f5fe08dbf5f74a6a330188e4c060655e54eaa361a2dbea622e67749d999/tormysql-0.4.2.tar.gz
+tar -xzvf tormysql-0.4.2.tar.gz
+cd tormysql-0.4.2
+python3 setup.py build
+python3 setup.py install
+############################################################
+
+4,离线安装meld3
+############################################################
+https://files.pythonhosted.org/packages/45/a0/317c6422b26c12fe0161e936fc35f36552069ba8e6f7ecbd99bbffe32a5f/meld3-1.0.2.tar.gz
+tar -xzvf meld3-1.0.2.tar.gz
+cd meld3-1.0.2
+python3 setup.py build
+python3 setup.py install
+############################################################
+
+5，离线安装supervisor（https://blog.csdn.net/namulee/article/details/80175548）
+############################################################
+wget https://files.pythonhosted.org/packages/41/a8/41ac6efd240cde4d98068dd1b4a5172fea5dcee58d4f3496f75e40b927c6/supervisor-4.0.4.tar.gz
+tar -xzvf supervisor-4.0.4.tar.gz
+cd supervisor-4.0.4
+python3 setup.py build
+python3 setup.py install
+/root/python3_7/bin/echo_supervisord_conf > /etc/supervisord.conf
+/root/python3_7/bin/supervisord -c /etc/supervisord.conf
+/root/python3_7/bin/supervisorctl update
+/root/python3_7/bin/supervisorctl reload
+############################################################
+nohup python3 webSocker.pyc &
+
+http://192.168.240.63:8888/api/test_file/test
