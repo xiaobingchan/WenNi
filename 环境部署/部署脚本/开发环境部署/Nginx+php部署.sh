@@ -45,7 +45,7 @@ composer config -g repo.packagist composer https://packagist.phpcomposer.com
 
 cd  /usr/local/
 wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.38.tar.gz
-tar zxvf /data/soft/pcre-8.38.tar.gz -C /usr/local
+tar zxvf pcre-8.38.tar.gz -C /usr/local
 
 cd  /usr/local/
 wget http://nginx.org/download/nginx-1.16.0.tar.gz
