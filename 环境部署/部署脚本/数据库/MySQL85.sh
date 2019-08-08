@@ -8,7 +8,7 @@
 
 yum -y install wget gcc gcc-c++ ncurses ncurses-devel cmake numactl.x86_64
 wget http://mysql.mirror.kangaroot.net/Downloads/MySQL-5.7/mysql-5.7.24-el7-x86_64.tar.gz
-tar -zxvf /data/soft/mysql-5.7.24-linux-glibc2.12-x86_64.tar.gz -C /usr/local/
+tar -zxvf mysql-5.7.24-linux-glibc2.12-x86_64.tar.gz -C /usr/local/
 mv /usr/local/mysql-5.7.24-linux-glibc2.12-x86_64/ /usr/local/mysql
 cd /usr/local/mysql/
 cp /usr/local/mysql/support-files/mysql.server /etc/init.d/mysql
@@ -31,7 +31,9 @@ myisam_sort_buffer_size = 8M
 basedir=/usr/local/mysql
 datadir=/var/lib/mysql
 bind-address=0.0.0.0
+skip-grant-tables
 EOF
+
 rm -rf /usr/local/mysql/data
 mkdir -p /usr/local/mysql/data
 chown mysql:mysql /usr/local/mysql/data
@@ -51,17 +53,6 @@ touch /var/run/mariadb/mariadb.pid
 mv /var/lib/mysql/ /var/lib/mysql_bak/
 
 
-rm -rf  /data/ioszdhyw/conf/my.cnf
-ln -s  /etc/my.cnf /data/ioszdhyw/conf/my.cnf
-rm -rf /data/ioszdhyw/bin/mysql
-ln -s  /usr/local/mysql/bin/mysql /data/ioszdhyw/bin/mysql
-rm -rf /data/ioszdhyw/bin/mysqld
-ln -s  /usr/local/mysql/bin/mysqld /data/ioszdhyw/bin/mysqld
-rm -rf /data/ioszdhyw/bin/mysqladmin
-ln -s  /usr/local/mysql/bin/mysqladmin /data/ioszdhyw/bin/mysqladmin
-rm -rf /data/ioszdhyw/bin/mysqld_safe
-ln -s  /usr/local/mysql/bin/mysqld_safe /data/ioszdhyw/bin/mysqld_safe
-
 cat  >> /etc/profile << EOF
 export PATH=\$PATH:/usr/local/mysql/bin:/usr/local/mysql/lib
 EOF
@@ -69,10 +60,14 @@ source /etc/profile
 useradd mysql
 pkill -9 mysql
 cd /usr/local/mysql/
-scripts/mysql_install_db --basedir=/usr/local/mysql --datadir=/usr/local/mysql/data --user=mysql --initialize-insecure
+/usr/local/mysql/bin/mysqld  --initialize --user=mysql
 /etc/init.d/mysql start
+
+use mysql
+update user set password_expired='N' where user='root';
+update mysql.user set authentication_string=password('123456') where user='root' and Host = 'localhost';
 
 mysql -u root -p
 set password for root@localhost=password('123456');
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY '123' with grant option;
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' with grant option;
 flush privileges;

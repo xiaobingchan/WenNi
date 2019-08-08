@@ -17,14 +17,6 @@ strings /usr/local/lib64/libssl.so |grep OpenSSL
 echo "/usr/local/ssl/lib" >> /etc/ld.so.conf
 ldconfig -v
 
-wget https://www.sqlite.org/2019/sqlite-autoconf-3290000.tar.gz
-tar zxvf sqlite-autoconf-3290000.tar.gz
-cd sqlite-autoconf-3290000
-./configure --prefix=$HOME/opt/sqlite
-make && make install
-export PATH=$HOME/opt/sqlite/bin:$PATH
-export LD_LIBRARY_PATH=$HOME/opt/sqlite/lib
-export LD_RUN_PATH=$HOME/opt/sqlite/li
 
 ############################################################
 
@@ -92,10 +84,71 @@ cd supervisor-4.0.4
 python3 setup.py build
 python3 setup.py install
 /root/python3_7/bin/echo_supervisord_conf > /etc/supervisord.conf
+
+cat >> /etc/supervisord.conf << EOF
+[include]
+files = /etc/supervisor/*.conf
+EOF
+
+mkdir -p /etc/supervisor/
+mkdir -p /export/api/logs/
+vi /etc/supervisor/api.conf
+[program:api]
+directory = /root/python3_7/bin
+command = nohup python3 /root/tornado_python3/aomm-jobservice2/webSocker.pyc > /dev/null 2>&1 &
+autostart = true
+startsecs = 5
+autorestart = true
+startretries = 3
+user = root
+redirect_stderr = true
+stdout_logfile_maxbytes = 20MB
+stdout_logfile_backups = 10
+stdout_logfile = /export/api/logs/sup_flume_stdout.log
+stopasgroup=true
+
 /root/python3_7/bin/supervisord -c /etc/supervisord.conf
 /root/python3_7/bin/supervisorctl update
 /root/python3_7/bin/supervisorctl reload
-############################################################
-nohup python3 webSocker.pyc &
+/root/python3_7/bin/supervisorctl start all
 
+############################################################
+
+worker_processes  2;
+
+events {
+    worker_connections  1024;
+    use epoll;
+}
+
+
+http {
+
+    upstream admin {
+        server 127.0.0.1:8888;
+    }
+
+    include       mime.types;
+    default_type  application/octet-stream;
+
+    sendfile        on;
+
+    keepalive_timeout  65;
+
+    server {
+        listen       80;
+        server_name  localhost;
+        location / {
+            root   html;
+            index  index.html index.htm;
+            proxy_pass_header Server;
+            proxy_set_header Host $http_host;
+            proxy_redirect off;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Scheme $scheme;
+            proxy_pass http://admin;
+         }
+}
+
+∑√Œ £∫
 http://192.168.240.63:8888/api/test_file/test
