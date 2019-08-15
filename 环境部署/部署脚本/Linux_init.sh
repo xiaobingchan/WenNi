@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Linux初始化系统优化：https://blog.51cto.com/13667208/2108973
 
 vi /etc/sysconfig/network-scripts/ifcfg-enp0s3
 ONBOOT YES
@@ -10,28 +9,38 @@ cat  >> /etc/sysconfig/selinux  << EOF
 SELINUX=disabled
 EOF
 
-# 防火墙增加端口
+# centos6防火墙增加22端口
 firewall-cmd --zone=public --add-port=22/tcp --permanent
 firewall-cmd --zone=public --add-port=80/tcp --permanent
 firewall-cmd --reload
 
+# 防火墙增加22端口
 vi /etc/sysconfig/iptables
 -A INPUT -p tcp -m state --state NEW -m tcp --dport 22 -j ACCEPT
--A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
 service iptables restart
 
-# 创建备份目录
-mkdir -p /etc/yum.repos.d/default
-mv /etc/yum.repos.d/repo /etc/yum.repos.d/default
-cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/default
-
-# yum源换阿里源
-mkdir -p /etc/yum.repos.d/{default,back}
-cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/default
-wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+# ssh 连接速度优化：
+vi /etc/ssh/sshd_config
+UseDNS no #不使用dns解析
+GSSAPIAuthentication no #连接慢的解决配置
+/etc/init.d/sshd restart
+#service sshd restart
 
 # 基础软件
 yum install -y wget unzip lrzsz nmap tree dos2unix nc bc
+
+# yum源换阿里源
+mkdir -p /etc/yum.repos.d/defaul
+cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/default
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+yum clean all
+yum makecache
+
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+sed -i  's/$releasever/7/g' /etc/yum.repos.d/CentOS-Base.repo
+wget -P /etc/yum.repos.d/ http://mirrors.aliyun.com/repo/epel-7.repo
+yum clean all
+yum makecache
 
 # 内核优化
 cat >>/etc/sysctl.conf<<EOF
@@ -59,10 +68,5 @@ chkconfig --list|egrep -v "sysstat|crond|sshd|network|rsyslog"|awk '{print "chkc
 echo '#time sync by oldboy at 2018-04-26' >> /var/spool/cron/root
 echo '/5 /usr/sbin/ntpdate ntp1.aliyun.com >/dev/null 2>&1' >> /var/spool/cron/root
 
-# ssh 连接速度优化：
-vi /etc/ssh/sshd_config
-UseDNS no #不使用dns解析
-GSSAPIAuthentication no #连接慢的解决配置
-/etc/init.d/sshd restart
-#service sshd restart
+
 
