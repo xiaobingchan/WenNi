@@ -9,12 +9,11 @@ cat  >> /etc/sysconfig/selinux  << EOF
 SELINUX=disabled
 EOF
 
-# centos6防火墙增加22端口
+# centos7防火墙增加22端口
 firewall-cmd --zone=public --add-port=22/tcp --permanent
-firewall-cmd --zone=public --add-port=80/tcp --permanent
 firewall-cmd --reload
 
-# 防火墙增加22端口
+# centos6防火墙增加22端口
 vi /etc/sysconfig/iptables
 -A INPUT -p tcp -m state --state NEW -m tcp --dport 22 -j ACCEPT
 service iptables restart
@@ -23,11 +22,10 @@ service iptables restart
 vi /etc/ssh/sshd_config
 UseDNS no #不使用dns解析
 GSSAPIAuthentication no #连接慢的解决配置
-/etc/init.d/sshd restart
-#service sshd restart
+service sshd restart
 
 # 基础软件
-yum install -y wget unzip lrzsz nmap tree dos2unix nc bc
+yum install -y net-tools wget unzip
 
 # yum源换阿里源
 mkdir -p /etc/yum.repos.d/defaul
@@ -36,6 +34,7 @@ wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-
 yum clean all
 yum makecache
 
+# yum换上扩展源
 wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 sed -i  's/$releasever/7/g' /etc/yum.repos.d/CentOS-Base.repo
 wget -P /etc/yum.repos.d/ http://mirrors.aliyun.com/repo/epel-7.repo
@@ -65,8 +64,13 @@ sysctl -p
 chkconfig --list|egrep -v "sysstat|crond|sshd|network|rsyslog"|awk '{print "chkconfig "$1,"off"}'|bash
 
 # 时间同步：
-echo '#time sync by oldboy at 2018-04-26' >> /var/spool/cron/root
-echo '/5 /usr/sbin/ntpdate ntp1.aliyun.com >/dev/null 2>&1' >> /var/spool/cron/root
-
+yum install -y ntpdate
+cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+yes | cp -f /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+ntpdate us.pool.ntp.org
+crontab -l >/tmp/crontab.bak
+echo "10 * * * * /usr/sbin/ntpdate us.pool.ntp.org | logger -t NTP" >> /tmp/crontab.bak
+crontab /tmp/crontab.bak
+date
 
 
