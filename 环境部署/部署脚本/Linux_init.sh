@@ -40,6 +40,7 @@ sed -i  's/$releasever/7/g' /etc/yum.repos.d/CentOS-Base.repo
 wget -P /etc/yum.repos.d/ http://mirrors.aliyun.com/repo/epel-7.repo
 yum clean all
 yum makecache
+yum install epel-release
 
 # 内核优化
 cat >>/etc/sysctl.conf<<EOF

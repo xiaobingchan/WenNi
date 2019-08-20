@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# https://blog.codecp.org/2016/10/19/Centos7%E5%AE%89%E8%A3%85Saltstack/
+# https://www.centos.bz/2018/08/%e8%87%aa%e5%8a%a8%e5%8c%96%e8%bf%90%e7%bb%b4%e5%b7%a5%e5%85%b7-saltstack%e5%ae%89%e8%a3%85%e9%83%a8%e7%bd%b2%e5%8f%8a%e7%ae%80%e5%8d%95%e6%a1%88%e4%be%8b/
 
 wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 sed -i  's/$releasever/7/g' /etc/yum.repos.d/CentOS-Base.repo
@@ -21,27 +21,50 @@ firewall-cmd --permanent --zone=public --add-port=4505/tcp
 firewall-cmd --permanent --zone=public --add-port=4506/tcp
 firewall-cmd --reload
 
-# 主机端
-vi /etc/salt/master
-# 绑定master通讯IP
-interface: 192.168.1.125
-# 设置自动认证，主要用于大批量的客户端认证
-auto_accept: True
-# 配置文件根目录
-file_roots:
-  base:
-    - /srv/salt
-systemctl enable salt-master
-systemctl start salt-master
+#################################################################
+systemctl stop firewalld.service
+setenforce 0
+cat >> /etc/hostname << EOF
+192.168.244.138 master.saltstack.com
+192.168.244.139 web01.saltstack.com
+EOF
 
-# 受控端
+vi /etc/salt/master
+
+interface: 192.168.244.138
+auto_accept: True
+file_roots:
+    base:
+         - /srv/salt
+pillar_roots:
+     base:
+        - /srv/pillar
+pillar_opts: True
+nodegroups:
+    group1: 'web01.saltstack.com'
+
+cat /etc/salt/master | grep -v ^$ | grep -v ^#
+mkdir /srv/salt
+mkdir /srv/pillar
+systemctl start salt-master.service
+netstat -natp | egrep '4505|4506'
+
+###########################################################################
+systemctl stop firewalld.service
+setenforce 0
+cat >> /etc/hostname << EOF
+192.168.244.138 master.saltstack.com
+192.168.244.139 web01.saltstack.com
+EOF
+
 vi /etc/salt/minion
-# 指定mater主机IP
-master: 192.168.1.125
-# 修改被控端主机识别ID，推荐系统主机名
-id: 192.168.1.126
-systemctl enable salt-minion
-systemctl start salt-minion
+master: 192.168.244.138
+id: web01.saltstack.com
+
+cat /etc/salt/minion | grep -v ^$ | grep -v ^#
+
+systemctl start salt-minion.service
+###########################################################################
 
 
 salt "*" test.ping
