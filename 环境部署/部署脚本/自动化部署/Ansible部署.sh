@@ -2,6 +2,12 @@
 
 # Ansible搭建博客：https://www.cnblogs.com/gzxbkk/p/7515634.html
 
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+sed -i  's/$releasever/7/g' /etc/yum.repos.d/CentOS-Base.repo
+wget -P /etc/yum.repos.d/ http://mirrors.aliyun.com/repo/epel-7.repo
+yum clean all
+yum makecache
+
 yum install ansible
 
 ssh-keygen -t rsa -P ''
