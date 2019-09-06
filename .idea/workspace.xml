@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b4b7e59e-ffd9-4aed-a13c-e2e4f8d20467" name="Default Changelist" comment="数据校验工具Nifi">
+      <change afterPath="$PROJECT_DIR$/.idea/WenNi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/环境部署/部署脚本/weblogic_install.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/环境部署/部署脚本/数据库/S0016-CreateDB-Oracle-linux.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/环境部署/部署脚本/自动化部署/Ansible部署.sh" beforeDir="false" afterPath="$PROJECT_DIR$/环境部署/部署脚本/自动化部署/Ansible部署.sh" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/开发环境部署/Apache+php部署.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/开发环境部署/pip-python安装环境.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/开发环境部署/python开发环境.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" selection-start-line="9" selection-end-line="13" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/开发环境部署/python3+tornado解决方案.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2907">
+              <caret line="153" column="45" selection-start-line="153" selection-start-column="45" selection-end-line="153" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/自动化部署/SaltStack部署.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" selection-start-line="4" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/自动化部署/Ansible部署.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/weblogic_install.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/数据库/S0016-CreateDB-Oracle-linux.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5301" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cert/高级项目管理师/报考安排.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="8" selection-start-column="5" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/Openstack.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="969">
+              <caret line="51" selection-start-line="51" selection-end-line="51" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>elk /usr/loca</find>
+      <find>http.cors.enabled: true</find>
+      <find>rabbit</find>
+      <find>fire</find>
+      <find>otp_src_21.1.tar.gz</find>
+      <find>zook</find>
+      <find>Hadoop</find>
+      <find>Spark</find>
+      <find>firewall</find>
+      <find>create</find>
+      <find>Docker</find>
+      <find>deep</find>
+      <find>优化</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/Docker.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/PHP框架构建" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/zabbix部署yum.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/监控/nagios部署.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/自动化部署/Puppet部署.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/消息队列.sh" />
+        <option value="$PROJECT_DIR$/py/Python基础语法/Python笔记.txt" />
+        <option value="$PROJECT_DIR$/devops/DevOps工程师招聘.txt" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/Docker_k8s/Vagrant.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/持续集成/gitea.sh" />
+        <option value="$PROJECT_DIR$/前端小插件/在线代码编辑器.txt" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/持续集成/Jenkin.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/持续集成/gitlab.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/集群/redis_cluster.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/集群/rabbitmq_cluster.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/消息队列/RabbitMQ.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/Zookeeper.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/集群/mongodb.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/消息队列/Zookeeper.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/蓝鲸/cmdb.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/数据库/redis.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/蓝鲸/job.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/Openstack.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/蓝鲸/paas.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/数据处理/FineBI.sh" />
+        <option value="$PROJECT_DIR$/Analysis/数据清洗/Kettle学习.txt" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/数据处理/Nifi.sh" />
+        <option value="$PROJECT_DIR$/Analysis/大数据/Hadoop.sh" />
+        <option value="$PROJECT_DIR$/Analysis/大数据/大数据.txt" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/数据处理/Hadoop.sh" />
+        <option value="$PROJECT_DIR$/Analysis/大数据/Hive.sh" />
+        <option value="$PROJECT_DIR$/Analysis/大数据/Hadoop+Spark.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/ELK/ELK.sh" />
+        <option value="$PROJECT_DIR$/Analysis/大数据/Griffin.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/Ngnix.sh" />
+        <option value="$PROJECT_DIR$/doc/相关文档/CentOS开发日记.txt" />
+        <option value="$PROJECT_DIR$/Analysis/数据清洗/Nifi学习.txt" />
+        <option value="$PROJECT_DIR$/tetete.py" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/ELK/Elasticsearch.sh" />
+        <option value="$PROJECT_DIR$/love/恋爱秘籍.txt" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/Docker_k8s/Docker.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/开发环境部署/Apache+php部署.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/开发环境部署/python开发环境.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/开发环境部署/python3+tornado解决方案.txt" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/数据库/MySQL85.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/开发环境部署/pip-python安装环境.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/集群/mysql_cluster.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/ubunutu_init.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/Linux_init.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/自动化部署/SaltStack部署.sh" />
+        <option value="$PROJECT_DIR$/环境部署/部署脚本/自动化部署/Ansible部署.sh" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="82" />
+    <option name="y" value="74" />
+    <option name="width" value="1030" />
+    <option name="height" value="687" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WenNi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WenNi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WenNi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WenNi" type="462c0819:PsiDirectoryNode" />
+              <item name="cert" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WenNi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WenNi" type="462c0819:PsiDirectoryNode" />
+              <item name="cert" type="462c0819:PsiDirectoryNode" />
+              <item name="高级项目管理师" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WenNi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WenNi" type="462c0819:PsiDirectoryNode" />
+              <item name="环境部署" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WenNi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WenNi" type="462c0819:PsiDirectoryNode" />
+              <item name="环境部署" type="462c0819:PsiDirectoryNode" />
+              <item name="部署脚本" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WenNi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WenNi" type="462c0819:PsiDirectoryNode" />
+              <item name="环境部署" type="462c0819:PsiDirectoryNode" />
+              <item name="部署脚本" type="462c0819:PsiDirectoryNode" />
+              <item name="数据库" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WenNi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WenNi" type="462c0819:PsiDirectoryNode" />
+              <item name="环境部署" type="462c0819:PsiDirectoryNode" />
+              <item name="部署脚本" type="462c0819:PsiDirectoryNode" />
+              <item name="自动化部署" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\WenNi\环境部署\部署脚本" />
+      <recent name="C:\Users\Administrator\Desktop\WenNi\PHP框架" />
+      <recent name="C:\Users\Administrator\Desktop\WenNi\环境部署\部署脚本\开发环境部署" />
+      <recent name="C:\Users\Administrator\Desktop\WenNi\环境部署\部署脚本\消息队列" />
+      <recent name="C:\Users\Administrator\Desktop\WenNi\环境部署\部署脚本\Docker_k8s" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\WenNi\环境部署\部署脚本\数据库" />
+      <recent name="C:\Users\Administrator\Desktop\WenNi\环境部署" />
+      <recent name="C:\Users\Administrator\Desktop\WenNi\环境部署\部署脚本\开发环境部署" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="tetete" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="WenNi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tetete.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tetete" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b4b7e59e-ffd9-4aed-a13c-e2e4f8d20467" name="Default Changelist" comment="" />
+      <created>1559313480285</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559313480285</updated>
+    </task>
+    <task id="LOCAL-00001" summary="大改进">
+      <created>1559313577586</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559313577586</updated>
+    </task>
+    <task id="LOCAL-00002" summary="大改进">
+      <created>1559313607082</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559313607082</updated>
+    </task>
+    <task id="LOCAL-00003" summary="大大的收获">
+      <created>1559488322057</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559488322057</updated>
+    </task>
+    <task id="LOCAL-00004" summary="增加python语法">
+      <created>1559488450161</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559488450161</updated>
+    </task>
+    <task id="LOCAL-00005" summary="增加python语法">
+      <created>1559558540498</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559558540498</updated>
+    </task>
+    <task id="LOCAL-00006" summary="加上点注释">
+      <created>1559633268829</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559633268829</updated>
+    </task>
+    <task id="LOCAL-00007" summary="集群大胜利">
+      <created>1559731343653</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559731343653</updated>
+    </task>
+    <task id="LOCAL-00008" summary="集群也要会">
+      <created>1559806644904</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1559806644904</updated>
+    </task>
+    <task id="LOCAL-00009" summary="做一下蓝鲸啊">
+      <created>1559812918202</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1559812918202</updated>
+    </task>
+    <task id="LOCAL-00010" summary="做一下蓝鲸啊">
+      <created>1559982130953</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1559982130953</updated>
+    </task>
+    <task id="LOCAL-00011" summary="做一下蓝鲸啊">
+      <created>1560160211577</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1560160211577</updated>
+    </task>
+    <task id="LOCAL-00012" summary="数据校验工具Nifi">
+      <created>1560163392820</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1560163392821</updated>
+    </task>
+    <task id="LOCAL-00013" summary="数据校验工具Nifi">
+      <created>1560335628746</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1560335628746</updated>
+    </task>
+    <task id="LOCAL-00014" summary="数据校验工具">
+      <created>1560505614683</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1560505614683</updated>
+    </task>
+    <task id="LOCAL-00015" summary="搞定hive">
+      <created>1560567918111</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1560567918111</updated>
+    </task>
+    <task id="LOCAL-00016" summary="数据清洗还是要学习呀">
+      <created>1560735300652</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1560735300652</updated>
+    </task>
+    <task id="LOCAL-00017" summary="数据校验工具Nifi">
+      <created>1560851438884</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1560851438884</updated>
+    </task>
+    <task id="LOCAL-00018" summary="数据校验工具Nifi深度开发">
+      <created>1560940091688</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1560940091688</updated>
+    </task>
+    <task id="LOCAL-00019" summary="数据校验工具Nifi">
+      <created>1561186026122</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1561186026122</updated>
+    </task>
+    <task id="LOCAL-00020" summary="婚前协约">
+      <created>1561197394173</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1561197394173</updated>
+    </task>
+    <task id="LOCAL-00021" summary="完善一波">
+      <created>1562929246100</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1562929246100</updated>
+    </task>
+    <task id="LOCAL-00022" summary="数据校验工具Nifi">
+      <created>1563790735944</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1563790735944</updated>
+    </task>
+    <task id="LOCAL-00023" summary="lei">
+      <created>1565169892829</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1565169892829</updated>
+    </task>
+    <task id="LOCAL-00024" summary="MySQL安装也要完善了">
+      <created>1565230447181</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1565230447181</updated>
+    </task>
+    <task id="LOCAL-00025" summary="周六日小幸运">
+      <created>1565536758481</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1565536758481</updated>
+    </task>
+    <task id="LOCAL-00026" summary="先初始化">
+      <created>1565865876461</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1565865876461</updated>
+    </task>
+    <task id="LOCAL-00027" summary="linux安装后也要优化了">
+      <created>1566208566955</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1566208566955</updated>
+    </task>
+    <task id="LOCAL-00028" summary="ubuntu安装优化一下">
+      <created>1566210692828</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1566210692828</updated>
+    </task>
+    <task id="LOCAL-00029" summary="趋向完美的saltstack">
+      <created>1566284578035</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1566284578035</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="82" y="74" width="1030" height="687" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6570681" visible="true" weight="0.2020202" />
+      <window_info id="Structure" order="1" sideWeight="0.34293193" side_tool="true" visible="true" weight="0.2020202" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35650623" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.30671507" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32894737" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="大改进" />
+    <MESSAGE value="大大的收获" />
+    <MESSAGE value="增加python语法" />
+    <MESSAGE value="加上点注释" />
+    <MESSAGE value="集群大胜利" />
+    <MESSAGE value="集群也要会" />
+    <MESSAGE value="做一下蓝鲸啊" />
+    <MESSAGE value="数据校验工具" />
+    <MESSAGE value="搞定hive" />
+    <MESSAGE value="数据清洗还是要学习呀" />
+    <MESSAGE value="数据校验工具Nifi深度开发" />
+    <MESSAGE value="婚前协约" />
+    <MESSAGE value="完善一波" />
+    <MESSAGE value="数据校验工具Nifi" />
+    <MESSAGE value="lei" />
+    <MESSAGE value="MySQL安装也要完善了" />
+    <MESSAGE value="周六日小幸运" />
+    <MESSAGE value="先初始化" />
+    <MESSAGE value="linux安装后也要优化了" />
+    <MESSAGE value="ubuntu安装优化一下" />
+    <MESSAGE value="趋向完美的saltstack" />
+    <option name="LAST_COMMIT_MESSAGE" value="趋向完美的saltstack" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/集群/rabbitmq_cluster.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" selection-start-line="28" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/消息队列/pulsar.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/监控/zabbix部署yum.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/相关文档/docker开发日记.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="36" column="65" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/消息队列/Zookeeper.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/消息队列/RabbitMQ.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/集群/mongodb.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2907">
+          <caret line="153" selection-start-line="153" selection-end-line="159" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/蓝鲸/job.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1786">
+          <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/数据处理/FineBI.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1235">
+          <caret line="65" selection-start-line="65" selection-end-line="65" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysis/大数据/HBase日常.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysis/数据清洗/Kettle学习.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/数据处理/Nifi.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/数据处理/Hadoop.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1444">
+          <caret line="76" selection-start-line="76" selection-end-line="78" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysis/大数据/Hadoop.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="18" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysis/大数据/Griffin.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4218">
+          <caret line="222" selection-start-line="222" selection-end-line="222" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tetete.py" />
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/开发环境部署/jdk开发环境.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/ELK/ELK.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="50" selection-start-line="50" selection-end-line="57" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/下载地址.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/蓝鲸/cmdb.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1349">
+          <caret line="71" column="11" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/蓝鲸/paas.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/ELK/Elasticsearch.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysis/数据清洗/Nifi学习.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="71" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video/音视频开发.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cert/高级项目管理师/案例题攻略.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cert/高级项目管理师/论文攻略.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cert/高级项目管理师/选择题攻略.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/love/恋爱秘籍.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="61" selection-start-line="12" selection-end-line="14" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/数据库/redis.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysis/大数据/Hive.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysis/大数据/大数据.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="81" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysis/大数据/Hadoop+Spark.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="84" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/持续集成/gitea.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/数据库/MySQL85.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/数据库/postgresql.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/数据库/mongodb.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/Ngnix.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="569" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/集群/mysql_cluster.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="102" column="20" selection-start-line="102" selection-end-line="102" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/Linux_init.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1235">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/ubunutu_init.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" selection-start-line="18" selection-end-line="32" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/Docker_k8s/Docker.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/开发环境部署/Apache+php部署.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/开发环境部署/pip-python安装环境.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/开发环境部署/python开发环境.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/开发环境部署/python3+tornado解决方案.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2907">
+          <caret line="153" column="45" selection-start-line="153" selection-start-column="45" selection-end-line="153" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cert/高级项目管理师/报考安排.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/Openstack.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="51" selection-start-line="51" selection-end-line="51" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/自动化部署/SaltStack部署.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/自动化部署/Ansible部署.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/数据库/S0016-CreateDB-Oracle-linux.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5301" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/环境部署/部署脚本/weblogic_install.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
